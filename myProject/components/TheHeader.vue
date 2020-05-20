@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
   .mp-bg-nav {
-    background: #d4f3ef;
+    background: #d7fffd;
   }
 
   .mp-logo {
