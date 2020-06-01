@@ -32,7 +32,7 @@
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'about'}">
+              <nuxt-link class="nav-link mp-nav" :to="{ name: 'about' }">
                 about us
               </nuxt-link>
             </li>

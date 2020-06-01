@@ -1,6 +1,9 @@
 
 export default {
   mode: 'universal',
+  router: {
+    prefetchLinks: false
+},
   /*
   ** Headers of the page
   */

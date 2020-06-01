@@ -5,7 +5,7 @@ import Home from './pages'
 import About from './pages/about'
 import Products from './pages/products'
 import Delivery from './pages/delivery'
-
+import ProductDetails from './pages/productDetails'
 Vue.use(Router)
 
 export function createRouter () {
@@ -21,6 +21,11 @@ export function createRouter () {
         name: 'products',
         path: '/products',
         component: Products
+      },
+      {
+        name: 'product-details',
+        path: '/product/:id',
+        component: ProductDetails
       },
       {
         name: 'delivery',
