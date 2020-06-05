@@ -3,7 +3,7 @@ export default {
   mode: 'universal',
   router: {
     prefetchLinks: false
-},
+  },
   /*
   ** Headers of the page
   */
@@ -21,11 +21,13 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: 'red', height: '5px' },
   /*
   ** Global CSS
   */
   css: [
+    'node_modules/normalize.css',
+    'assets/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -56,6 +58,8 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    host: 'localhost',
+    port: 8080
   },
   /*
   ** Build configuration

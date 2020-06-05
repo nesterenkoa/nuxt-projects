@@ -2,7 +2,7 @@
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg mp-bg-nav">
       <div class="container">
-        <a class="navbar-brand mp-logo">yuk</a>
+        <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">yuk</nuxt-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,6 +38,8 @@
             </li>
           </ul>
         </div>
+        <nuxt-link to="#" class="mp-shopping-cart">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> </nuxt-link>
       </div>
     </nav>
   </div>
@@ -96,5 +98,14 @@ export default {
   .mp-nav:hover {
     transition: all .5s;
     color: #41cdc5;
+  }
+
+  .mp-shopping-cart{
+    color: #74d4c0;
+    font-size: 25px;
+  }
+
+  .mp-shopping-cart:hover{
+    color: #eca0b6;
   }
 </style>

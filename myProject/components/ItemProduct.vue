@@ -1,35 +1,38 @@
 <template>
-  <div>
-      <nuxt-link class="mp-link-styles" :to="{ name: 'product-details', params: { id: product.id } }">
-        <div class="mp-gallery-item">
-          <img :src="product.image" :alt="product.alt">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <nuxt-link class="mp-link-styles" :to="{ name: 'product-details', params: { id: product.id } }">
+      <div class="mp-gallery-item">
+        <img :src="product.img" :alt="product.alt">
 
-          <div class="mp-test">
-            <div class="d-flex justify-content-between align-items-center mp-margin-bt">
-              <h4 class="mp-title">
-                {{ product.title }}
-              </h4>
-              <p class="mp-price">
-                {{ product.price }}
-              </p>
-            </div>
-            <p class="mp-description">
-              {{ product.description }}
+        <div class="mp-test">
+          <div class="d-flex justify-content-between align-items-center mp-margin-bt">
+            <h4 class="mp-title">
+              {{ product.title }}
+            </h4>
+            <p class="mp-price">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              {{ product.price }}
             </p>
-
-            <button class="mp-btn mp-btn-order">
-              Order
-            </button>
           </div>
+          <p class="mp-description">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            {{ product.description }}
+          </p>
+
+          <button class="mp-btn mp-btn-order">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            Order
+          </button>
         </div>
-      </nuxt-link>
-    </div>
+      </div>
+    </nuxt-link>
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'CardProduct',
+  name: 'ItemProduct',
   props: {
     product: {
       type: Object,
@@ -69,8 +72,8 @@ export default {
   .mp-gallery-item img {
     display: block;
     width: 100%;
-    height: 29vw;
-    object-fit: cover;
+    max-height: 35vw;
+    /*object-fit: cover;*/
     margin-bottom: 10px;
   }
 
@@ -91,6 +94,7 @@ export default {
   }
 
   .mp-description {
+    font-family: 'Montserrat';
     color: #007892;
     min-height: 75px;
   }
@@ -107,5 +111,9 @@ export default {
   .mp-btn-order:hover{
     background: #74d4c0;
     color: white;
+  }
+
+  .fa-cutlery{
+    margin-right: 5px;
   }
 </style>

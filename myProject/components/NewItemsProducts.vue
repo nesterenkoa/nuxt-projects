@@ -37,7 +37,7 @@ export default {
   data: () => ({
     newItems: [
       {
-        image: require('../assets/img-1.jpg'),
+        image: require('../assets/img/img-1.jpg'),
         alt: 'img-1',
         title: 'Item - 1',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom',
@@ -45,7 +45,7 @@ export default {
         id: 1
       },
       {
-        image: require('../assets/img-2.jpg'),
+        image: require('../assets/img/img-2.jpg'),
         alt: 'img-2',
         title: 'Item - 2',
         description: 'Totam rem aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.',
@@ -53,7 +53,7 @@ export default {
         id: 2
       },
       {
-        image: require('../assets/img-3.jpg'),
+        image: require('../assets/img/img-3.jpg'),
         alt: 'img-3',
         title: 'Item - 3',
         description: 'But et iust ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will ',
@@ -61,7 +61,7 @@ export default {
         id: 3
       },
       {
-        image: require('../assets/img-4.jpg'),
+        image: require('../assets/img/img-4.jpg'),
         alt: 'img-4',
         title: 'Item - 4',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom',

@@ -10,21 +10,21 @@
     >
       <b-carousel-slide
         caption="First slide"
-        img-src="../assets/slide-3.jpg"
+        img-src="../assets/img/slide-3.jpg"
       />
 
-      <b-carousel-slide
-        caption="Second Slide"
-        img-src="../assets/slide-14.jpg"
-      />
-      <b-carousel-slide
-        caption="Third Slide"
-        img-src="../assets/slide-6.jpg"
-      />
-      <b-carousel-slide
-        caption="Fourth Slide"
-        img-src="../assets/slide-10.jpg"
-      />
+      <!--<b-carousel-slide-->
+        <!--caption="Second Slide"-->
+        <!--img-src="../assets/img/slide-14.jpg"-->
+      <!--/>-->
+      <!--<b-carousel-slide-->
+        <!--caption="Third Slide"-->
+        <!--img-src="../assets/img/slide-6.jpg"-->
+      <!--/>-->
+      <!--<b-carousel-slide-->
+        <!--caption="Fourth Slide"-->
+        <!--img-src="../assets/img/slide-10.jpg"-->
+      <!--/>-->
     </b-carousel>
   </div>
   <!--<b-carousel-->

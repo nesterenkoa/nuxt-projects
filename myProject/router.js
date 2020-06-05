@@ -14,27 +14,27 @@ export function createRouter () {
     routes: [
       {
         name: 'about',
-        path: '/about',
+        path: '/:lang?/about',
         component: About
       },
       {
         name: 'products',
-        path: '/products',
+        path: '/:lang?/products',
         component: Products
       },
       {
         name: 'product-details',
-        path: '/product/:id',
+        path: '/:lang?/product/:id',
         component: ProductDetails
       },
       {
         name: 'delivery',
-        path: '/delivery',
+        path: '/:lang?/delivery',
         component: Delivery
       },
       {
         name: 'home',
-        path: '/home',
+        path: '/:lang?/home',
         component: Home
       }
     ]
