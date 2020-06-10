@@ -14,16 +14,16 @@
       />
 
       <!--<b-carousel-slide-->
-        <!--caption="Second Slide"-->
-        <!--img-src="../assets/img/slide-14.jpg"-->
+      <!--caption="Second Slide"-->
+      <!--img-src="../assets/img/slide-14.jpg"-->
       <!--/>-->
       <!--<b-carousel-slide-->
-        <!--caption="Third Slide"-->
-        <!--img-src="../assets/img/slide-6.jpg"-->
+      <!--caption="Third Slide"-->
+      <!--img-src="../assets/img/slide-6.jpg"-->
       <!--/>-->
       <!--<b-carousel-slide-->
-        <!--caption="Fourth Slide"-->
-        <!--img-src="../assets/img/slide-10.jpg"-->
+      <!--caption="Fourth Slide"-->
+      <!--img-src="../assets/img/slide-10.jpg"-->
       <!--/>-->
     </b-carousel>
   </div>

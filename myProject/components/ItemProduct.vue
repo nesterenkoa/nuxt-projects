@@ -10,18 +10,27 @@
               {{ product.title }}
             </h4>
             <p class="mp-price">
-              <i class="fa fa-tags" aria-hidden="true"></i>
+              <i class="fa fa-tags" aria-hidden="true" />
               {{ product.price }}
             </p>
           </div>
           <p class="mp-description">
-            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <i class="fa fa-cutlery" aria-hidden="true" />
             {{ product.description }}
           </p>
 
           <button class="mp-btn mp-btn-order">
-            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            <i class="fa fa-cart-plus" aria-hidden="true" />
             Order
+          </button>
+
+          <button v-if="isCanAdd(product.id)" class="mp-btn mp-btn-order" @click.prevent="onAddToFavorites(product)">
+            <i class="fa fa-cart-plus" aria-hidden="true" />
+            Add to favorites
+          </button>
+          <button v-else class="mp-btn mp-btn-order">
+            <i class="fa fa-cart-plus" aria-hidden="true" />
+            Remove from favorites
           </button>
         </div>
       </div>
@@ -30,7 +39,7 @@
 </template>
 
 <script>
-
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'ItemProduct',
   props: {
@@ -38,7 +47,13 @@ export default {
       type: Object,
       required: true
     }
-  }
+  },
+  computed: mapGetters({
+    isCanAdd: 'favorites/isCanAdd'
+  }),
+  methods: mapActions({
+    onAddToFavorites: 'favorites/add'
+  })
 }
 </script>
 

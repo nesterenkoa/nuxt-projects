@@ -2,7 +2,9 @@
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg mp-bg-nav">
       <div class="container">
-        <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">yuk</nuxt-link>
+        <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">
+          yuk
+        </nuxt-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,16 +40,25 @@
             </li>
           </ul>
         </div>
+        <SearchProducts />
         <nuxt-link to="#" class="mp-shopping-cart">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i> </nuxt-link>
+          <i class="fa fa-shopping-cart" aria-hidden="true" />
+          <pre> {{ favorites.length }}</pre>
+        </nuxt-link>
       </div>
     </nav>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import SearchProducts from '../components/SearchProducts'
 export default {
-  name: 'TheHeader'
+  name: 'TheHeader',
+  components: { SearchProducts },
+  computed: mapGetters({
+    favorites: 'favorites/items'
+  })
 }
 </script>
 

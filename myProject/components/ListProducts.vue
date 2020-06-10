@@ -5,17 +5,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import ItemProduct from './ItemProduct'
 
 export default {
   name: 'ListProducts',
-  comments: { ItemProduct },
-  props: {
-    products: {
-      type: Array,
-      required: true
-    }
-  }
+  components: { ItemProduct },
+  computed: mapGetters({
+    products: 'products/items'
+  })
 }
 </script>
 

@@ -1,5 +1,31 @@
 {
-  "products":[
+  "favorites": [
+    {
+      "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
+      "alt": "img-2",
+      "title": "Item - 2",
+      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.",
+      "price": 270,
+      "id": 2
+    },
+    {
+      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
+      "alt": "img-1",
+      "title": "Item - 1",
+      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
+      "price": 250,
+      "id": 1
+    },
+    {
+      "img": "https://i.pinimg.com/564x/3b/63/ed/3b63ed8501adfeffd5494b074905bc2e.jpg",
+      "alt": "img-4",
+      "title": "Item - 4",
+      "description": "Lorem ipsum  life dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
+      "price": 180,
+      "id": 4
+    }
+  ],
+  "products": [
     {
       "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
       "alt": "img-1",
@@ -191,8 +217,8 @@
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 570,
       "id": 24
-    }
-    , {
+    },
+    {
       "img": "https://i.pinimg.com/564x/76/fe/55/76fe55600d481bd4de4bd6407337b042.jpg",
       "alt": "img-25",
       "title": "Item - 25",
@@ -200,6 +226,5 @@
       "price": 170,
       "id": 25
     }
-    
   ]
 }

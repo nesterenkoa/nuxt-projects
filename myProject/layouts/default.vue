@@ -16,7 +16,16 @@ export default {
   components: {
     TheHeader,
     Breadcrumb
+  },
+  fetch ({ store }) {
+    store.dispatch('favorites/load')
   }
+  // methods: mapActions({
+  //   loadFavorites: 'favorites/load',
+  // })
+  // onCreate: () => {
+  //   loadFavorites();
+  // }
 }
 </script>
 
