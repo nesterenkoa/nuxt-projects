@@ -2,7 +2,7 @@
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg mp-bg-nav">
       <div class="container">
-        <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">
+        <nuxt-link :to="{name: 'home' }" class="navbar-brand  mr-5 mp-logo">
           yuk
         </nuxt-link>
         <button
@@ -16,7 +16,7 @@
         >
           <span class="navbar-toggler-icon" />
         </button>
-        <div id="navbarNav" class="collapse navbar-collapse mp-navbar">
+        <div id="navbarNav" class="collapse navbar-collapse mr-5 mp-navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
               <nuxt-link class="nav-link mp-nav" :to="{ name: 'home' }">
@@ -41,24 +41,21 @@
           </ul>
         </div>
         <SearchProducts />
-        <nuxt-link to="#" class="mp-shopping-cart">
-          <i class="fa fa-shopping-cart" aria-hidden="true" />
-          <pre> {{ favorites.length }}</pre>
-        </nuxt-link>
+        <ShoppingCart />
       </div>
     </nav>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import SearchProducts from '../components/SearchProducts'
+import ShoppingCart from '../components/ShoppingCart'
 export default {
   name: 'TheHeader',
-  components: { SearchProducts },
-  computed: mapGetters({
-    favorites: 'favorites/items'
-  })
+  components: {
+    SearchProducts,
+    ShoppingCart
+  }
 }
 </script>
 
@@ -71,7 +68,10 @@ export default {
     color: white;
     text-shadow: 0 1px 3px rgba(21, 206, 193, 0.96);
     font-size: 30px;
-    margin-right: 80px;
+  }
+
+  .mp-navbar{
+    flex-grow:0;
   }
 
   .mp-logo:hover {
@@ -98,7 +98,7 @@ export default {
     margin: auto;
     width: 0;
     content: '';
-    background: white;
+    background: yellow;
     height: 1px;
   }
 
@@ -111,12 +111,4 @@ export default {
     color: #41cdc5;
   }
 
-  .mp-shopping-cart{
-    color: #74d4c0;
-    font-size: 25px;
-  }
-
-  .mp-shopping-cart:hover{
-    color: #eca0b6;
-  }
 </style>

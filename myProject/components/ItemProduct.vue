@@ -16,20 +16,15 @@
           </div>
           <p class="mp-description">
             <i class="fa fa-cutlery" aria-hidden="true" />
-            {{ product.description }}
+            {{ product.previewText }}
           </p>
-
-          <button class="mp-btn mp-btn-order">
-            <i class="fa fa-cart-plus" aria-hidden="true" />
-            Order
-          </button>
 
           <button v-if="isCanAdd(product.id)" class="mp-btn mp-btn-order" @click.prevent="onAddToFavorites(product)">
             <i class="fa fa-cart-plus" aria-hidden="true" />
             Add to favorites
           </button>
-          <button v-else class="mp-btn mp-btn-order">
-            <i class="fa fa-cart-plus" aria-hidden="true" />
+          <button v-else class="mp-btn mp-btn-remove" @click.prevent="onRemoveFromFavorites(product)">
+            <i class="fa fa-shopping-cart" aria-hidden="true" />
             Remove from favorites
           </button>
         </div>
@@ -52,7 +47,8 @@ export default {
     isCanAdd: 'favorites/isCanAdd'
   }),
   methods: mapActions({
-    onAddToFavorites: 'favorites/add'
+    onAddToFavorites: 'favorites/add',
+    onRemoveFromFavorites: 'favorites/remove'
   })
 }
 </script>
@@ -96,39 +92,4 @@ export default {
     margin-bottom: 10px;
   }
 
-  .mp-title {
-    color: #862a5c;
-  }
-
-  .mp-price {
-    padding: 10px;
-    margin: 0;
-    background: #eca0b6;
-    border-radius: 5px;
-    color: white;
-  }
-
-  .mp-description {
-    font-family: 'Montserrat';
-    color: #007892;
-    min-height: 75px;
-  }
-
-  .mp-btn-order{
-    padding: 10px 15px;
-    background: #fafba4;
-    color: #862a5c;
-    align-self: flex-end;
-    border-radius: 5px;
-    border: transparent;
-  }
-
-  .mp-btn-order:hover{
-    background: #74d4c0;
-    color: white;
-  }
-
-  .fa-cutlery{
-    margin-right: 5px;
-  }
 </style>

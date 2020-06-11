@@ -21,11 +21,30 @@ export const actions = {
     commit('saveProducts', products)
   },
   async add ({ commit, state }, product) {
+    const alreadyAdded = state.items.find(item => item.id === product.id)
+    if (alreadyAdded) {
+      // уже в корзине - не делаем ничего
+      return
+    }
     try {
-      if (state.items.findIndex(item => item.id === product.id) === -1) {
-        const favoritesProduct = await this.$axios.$post('/favorites', { ...product })
-        commit('saveNew', favoritesProduct)
-      }
+      await this.$axios.$post('/favorites', product)
+      commit('addProduct', product)
+    } catch (e) {
+      console.log(e)
+    }
+  },
+  async remove ({ commit, state }, product) {
+    try {
+      await this.$axios.$delete(`/favorites/${product.id}`)
+      commit('removeProduct', product)
+    } catch (e) {
+      console.log(e)
+    }
+  },
+  removeAll ({ commit, state }) {
+    try {
+      state.items.forEach(item => this.$axios.$delete(`/favorites/${item.id}`))
+      commit('saveProducts', [])
     } catch (e) {
       console.log(e)
     }
@@ -36,7 +55,10 @@ export const mutations = {
   saveProducts (state, products) {
     state.items = products
   },
-  saveNew (state, product) {
+  addProduct (state, product) {
     state.items.push(product)
+  },
+  removeProduct (state, product) {
+    state.items = state.items.filter(i => i.id !== product.id)
   }
 }

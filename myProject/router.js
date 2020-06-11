@@ -6,6 +6,7 @@ import About from './pages/about'
 import Products from './pages/products'
 import Delivery from './pages/delivery'
 import ProductDetails from './pages/productDetails'
+import Cart from './pages/cart'
 Vue.use(Router)
 
 export function createRouter () {
@@ -31,6 +32,11 @@ export function createRouter () {
         name: 'delivery',
         path: '/:lang?/delivery',
         component: Delivery
+      },
+      {
+        name: 'cart',
+        path: '/:lang?/cart',
+        component: Cart
       },
       {
         name: 'home',

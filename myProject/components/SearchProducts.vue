@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <form @submit.prevent="onSearch">
-      <input v-model="q" type="search" class="form-control mp-search" placeholder="Type to search...">
-    </form>
-  </div>
+  <form class="mr-5 mp-search" @submit.prevent="onSearch">
+    <input v-model="q" type="search" class="form-control" placeholder="Type to search...">
+  </form>
 </template>
 
 <script>
@@ -26,6 +24,10 @@ export default {
 
 <style scoped>
 .mp-search{
-
+  flex-grow: 1;
 }
+  .mp-search input{
+    border-radius: 20px;
+    border-color: yellow;
+  }
 </style>

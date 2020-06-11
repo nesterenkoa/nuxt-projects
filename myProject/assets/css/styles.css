@@ -1,0 +1,52 @@
+.mp-title {
+  color: #862a5c;
+}
+
+.mp-price {
+  padding: 10px;
+  margin: 0;
+  background: #eca0b6;
+  border-radius: 5px;
+  color: white;
+}
+
+.mp-description {
+  font-family: 'Montserrat';
+  color: #007892;
+  min-height: 75px;
+}
+
+.mp-btn{
+  padding: 10px 15px;
+  align-self: flex-end;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.mp-btn-order{
+  padding: 10px 15px;
+  background: #fafba4;
+  color: #862a5c;
+  align-self: flex-end;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.mp-btn-order:hover{
+  background: #74d4c0;
+  color: white;
+}
+
+.mp-btn-remove{
+  color:#862a5c;
+  background: #fff0f5;
+  border: 1px solid #862a5c;
+}
+.mp-btn-remove:hover{
+  background: #862a5c;
+  color: white;
+}
+
+.fa-cutlery{
+  margin-right: 5px;
+}

@@ -4,64 +4,16 @@
       "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
       "alt": "img-2",
       "title": "Item - 2",
-      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 270,
       "id": 2
-    },
-    {
-      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
-      "alt": "img-1",
-      "title": "Item - 1",
-      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
-      "price": 250,
-      "id": 1
-    },
-    {
-      "img": "https://i.pinimg.com/564x/3b/63/ed/3b63ed8501adfeffd5494b074905bc2e.jpg",
-      "alt": "img-4",
-      "title": "Item - 4",
-      "description": "Lorem ipsum  life dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
-      "price": 180,
-      "id": 4
-    }
-  ],
-  "products": [
-    {
-      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
-      "alt": "img-1",
-      "title": "Item - 1",
-      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
-      "price": 250,
-      "id": 1
-    },
-    {
-      "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
-      "alt": "img-2",
-      "title": "Item - 2",
-      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.",
-      "price": 270,
-      "id": 2
-    },
-    {
-      "img": "https://i.pinimg.com/564x/e4/55/c1/e455c198cdc999f8511e60dd754decfd.jpg",
-      "alt": "img-3",
-      "title": "Item - 3",
-      "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will",
-      "price": 340,
-      "id": 3
-    },
-    {
-      "img": "https://i.pinimg.com/564x/3b/63/ed/3b63ed8501adfeffd5494b074905bc2e.jpg",
-      "alt": "img-4",
-      "title": "Item - 4",
-      "description": "Lorem ipsum  life dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
-      "price": 180,
-      "id": 4
     },
     {
       "img": "https://i.pinimg.com/564x/bb/51/9c/bb519c5adb6c96b8f34b1028a2ccefe7.jpg",
       "alt": "img-5",
       "title": "Item - 5",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 650,
       "id": 5
@@ -70,7 +22,73 @@
       "img": "https://i.pinimg.com/564x/9e/f3/51/9ef3510250ede7f2906cc7b899683a11.jpg",
       "alt": "img-6",
       "title": "Item - 6",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "price": 350,
+      "id": 6
+    },
+    {
+      "img": "https://i.pinimg.com/564x/e4/55/c1/e455c198cdc999f8511e60dd754decfd.jpg",
+      "alt": "img-3",
+      "title": "Item - 3",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 340,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
+      "alt": "img-1",
+      "title": "Item - 1",
+      "previewText": "But I must explain to you how all thisdea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 250,
+      "id": 1
+    },
+    {
+      "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
+      "alt": "img-2",
+      "title": "Item - 2",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 270,
+      "id": 2
+    },
+    {
+      "img": "https://i.pinimg.com/564x/e4/55/c1/e455c198cdc999f8511e60dd754decfd.jpg",
+      "alt": "img-3",
+      "title": "Item - 3",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 340,
+      "id": 3
+    },
+    {
+      "img": "https://i.pinimg.com/564x/3b/63/ed/3b63ed8501adfeffd5494b074905bc2e.jpg",
+      "alt": "img-4",
+      "title": "Item - 4",
+      "previewText": "But I must to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Lorem ipsum  life dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
+      "price": 180,
+      "id": 4
+    },
+    {
+      "img": "https://i.pinimg.com/564x/bb/51/9c/bb519c5adb6c96b8f34b1028a2ccefe7.jpg",
+      "alt": "img-5",
+      "title": "Item - 5",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "price": 650,
+      "id": 5
+    },
+    {
+      "img": "https://i.pinimg.com/564x/9e/f3/51/9ef3510250ede7f2906cc7b899683a11.jpg",
+      "alt": "img-6",
+      "title": "Item - 6",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 350,
       "id": 6
     },
@@ -78,7 +96,8 @@
       "img": "https://i.pinimg.com/564x/f5/b9/9a/f5b99a992957cd48f8357498ce332fef.jpg",
       "alt": "img-7",
       "title": "Item - 7",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 230,
       "id": 7
     },
@@ -86,7 +105,8 @@
       "img": "https://i.pinimg.com/564x/4b/4e/c3/4b4ec35487ece9678c838baaadd2ae6a.jpg",
       "alt": "img-8",
       "title": "Item - 9",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 120,
       "id": 8
     },
@@ -94,7 +114,8 @@
       "img": "https://i.pinimg.com/564x/69/c2/79/69c2799c74c4aa97c685a57a6b52eee5.jpg",
       "alt": "img-9",
       "title": "Item - 9",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 540,
       "id": 9
     },
@@ -102,7 +123,8 @@
       "img": "https://i.pinimg.com/564x/3f/ef/30/3fef30b3cdc9a43824bba54bbb5ed62f.jpg",
       "alt": "img-10",
       "title": "Item - 10",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 130,
       "id": 10
     },
@@ -110,7 +132,8 @@
       "img": "https://i.pinimg.com/564x/2b/8c/c3/2b8cc3c7b504f1894c82151384835907.jpg",
       "alt": "img-11",
       "title": "Item - 11",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 170,
       "id": 11
     },
@@ -118,7 +141,8 @@
       "img": "https://i.pinimg.com/564x/ac/f9/37/acf937e77d9507cdd3099b78480af56f.jpg",
       "alt": "img-12",
       "title": "Item - 12",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 230,
       "id": 12
     },
@@ -126,7 +150,8 @@
       "img": "https://i.pinimg.com/564x/d3/02/17/d30217012806c7467105249a5d8fea32.jpg",
       "alt": "img-13",
       "title": "Item - 13",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 430,
       "id": 13
     },
@@ -134,7 +159,8 @@
       "img": "https://i.pinimg.com/564x/67/fb/ed/67fbed8280075daec44c3b2676ea724c.jpg",
       "alt": "img-14",
       "title": "Item - 14",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth",
       "price": 140,
       "id": 14
     },
@@ -142,7 +168,8 @@
       "img": "https://i.pinimg.com/564x/58/fb/77/58fb776bd173152ed208da2a5431c3cb.jpg",
       "alt": "img-15",
       "title": "Item - 15",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui offici.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 570,
       "id": 15
     },
@@ -150,7 +177,8 @@
       "img": "https://i.pinimg.com/564x/11/1b/35/111b35ca064a1cdbaf52e218a25af203.jpg",
       "alt": "img-16",
       "title": "Item - 16",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
       "price": 270,
       "id": 16
     },
@@ -158,7 +186,8 @@
       "img": "https://i.pinimg.com/564x/92/fc/fe/92fcfed30bb4296fa8d25dbeeca47585.jpg",
       "alt": "img-17",
       "title": "Item - 17",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain . voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 380,
       "id": 17
     },
@@ -166,7 +195,8 @@
       "img": "https://i.pinimg.com/564x/9a/cd/48/9acd485a0df047db0849779e546a9b00.jpg",
       "alt": "img-18",
       "title": "Item - 18",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain, rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 340,
       "id": 18
     },
@@ -174,7 +204,8 @@
       "img": "https://i.pinimg.com/564x/d7/ae/e2/d7aee272ee82054976fe557d6a32a34c.jpg",
       "alt": "img-19",
       "title": "Item - 19",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem aperiam, eaque.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain. Ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 455,
       "id": 19
     },
@@ -182,7 +213,8 @@
       "img": "https://i.pinimg.com/564x/f6/7b/5c/f67b5c5befc4189f7781a4d7fd004992.jpg",
       "alt": "img-20",
       "title": "Item - 20",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 129,
       "id": 20
     },
@@ -190,7 +222,8 @@
       "img": "https://i.pinimg.com/564x/35/8c/fe/358cfe53c6611707696d2e4db12c67de.jpg",
       "alt": "img-21",
       "title": "Item - 21",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain,aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 670,
       "id": 21
     },
@@ -198,7 +231,8 @@
       "img": "https://i.pinimg.com/564x/62/8b/93/628b9337c69797d90497fbdf603da94f.jpg",
       "alt": "img-22",
       "title": "Item - 22",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owin. Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 123,
       "id": 22
     },
@@ -206,7 +240,8 @@
       "img": "https://i.pinimg.com/564x/f6/84/f5/f684f5da6fe620826faef24661239cb3.jpg",
       "alt": "img-23",
       "title": "Item - 23",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem aperiam, eaqu.These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing. ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 430,
       "id": 23
     },
@@ -214,7 +249,8 @@
       "img": " https://i.pinimg.com/564x/d3/91/0a/d3910a378bcd92e6b85539df5c7f7327.jpg",
       "alt": "img-24",
       "title": "Item - 24",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing,rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 570,
       "id": 24
     },
@@ -222,7 +258,8 @@
       "img": "https://i.pinimg.com/564x/76/fe/55/76fe55600d481bd4de4bd6407337b042.jpg",
       "alt": "img-25",
       "title": "Item - 25",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem.These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing, aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
       "price": 170,
       "id": 25
     }
