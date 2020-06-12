@@ -1,15 +1,23 @@
 <template>
   <div>
-    <h1> caarttt</h1>
-    <ListCartProducts v-if="favorites.length > 0" />
+    <div  v-if="favorites.length > 0">
+        <div class="d-flex justify-content-between">
+            <h2> Ваша корзина </h2>
+            <p @click="removeAllProducts">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              Oчистить все
+            </p>
+        </div>
+        <ListCartProducts  />
+      </div>
     <p v-else>
-      В Вашей корзине ничего нет =(
+      Ваша корзина пуста =(
     </p>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import ListCartProducts from '../components/ListCartProducts'
 export default {
   name: 'Cart',
@@ -18,6 +26,9 @@ export default {
   },
   computed: mapGetters({
     favorites: 'favorites/items'
+  }),
+  methods: mapActions({
+    removeAllProducts: 'favorites/removeAll'
   })
 
 }

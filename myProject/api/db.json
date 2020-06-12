@@ -1,42 +1,5 @@
 {
-  "favorites": [
-    {
-      "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
-      "alt": "img-2",
-      "title": "Item - 2",
-      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
-      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
-      "price": 270,
-      "id": 2
-    },
-    {
-      "img": "https://i.pinimg.com/564x/bb/51/9c/bb519c5adb6c96b8f34b1028a2ccefe7.jpg",
-      "alt": "img-5",
-      "title": "Item - 5",
-      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
-      "price": 650,
-      "id": 5
-    },
-    {
-      "img": "https://i.pinimg.com/564x/9e/f3/51/9ef3510250ede7f2906cc7b899683a11.jpg",
-      "alt": "img-6",
-      "title": "Item - 6",
-      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
-      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
-      "price": 350,
-      "id": 6
-    },
-    {
-      "img": "https://i.pinimg.com/564x/e4/55/c1/e455c198cdc999f8511e60dd754decfd.jpg",
-      "alt": "img-3",
-      "title": "Item - 3",
-      "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
-      "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
-      "price": 340,
-      "id": 3
-    }
-  ],
+  "favorites": [],
   "products": [
     {
       "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
@@ -79,7 +42,7 @@
       "alt": "img-5",
       "title": "Item - 5",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.Ko run a bit longer so that you can see how spacing within an",
       "price": 650,
       "id": 5
     },

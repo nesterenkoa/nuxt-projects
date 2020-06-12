@@ -17,11 +17,17 @@
         <i class="fa fa-cutlery" aria-hidden="true" />
         {{ favorit.description }}
       </p>
+      <button class="mp-btn mp-btn-remove" @click.prevent="onRemoveFromFavorites(favorit)">
+        <i class="fa fa-shopping-cart" aria-hidden="true" />
+        Remove from favorites
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'ItemCartProduct',
   props: {
@@ -29,7 +35,10 @@ export default {
       type: Object,
       required: true
     }
-  }
+  },
+  methods: mapActions({
+    onRemoveFromFavorites: 'favorites/remove'
+  })
 }
 </script>
 
