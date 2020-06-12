@@ -33,7 +33,7 @@ export default {
     background:#fafba4 ;
     border-radius: 50%;
     box-sizing: border-box;
-    padding: 5px 8px;
+    /*padding: 5px 8px;*/
     line-height: normal;
     text-align: center;
     font-size: 18px;

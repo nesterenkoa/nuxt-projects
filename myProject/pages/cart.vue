@@ -10,19 +10,20 @@
         </div>
         <ListCartProducts  />
       </div>
-    <p v-else>
-      Ваша корзина пуста =(
-    </p>
+    <BasketEmpy v-else />
+
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import ListCartProducts from '../components/ListCartProducts'
+import BasketEmpy from '../components/BasketEmpy'
 export default {
   name: 'Cart',
   components: {
-    ListCartProducts
+    ListCartProducts,
+    BasketEmpy
   },
   computed: mapGetters({
     favorites: 'favorites/items'
