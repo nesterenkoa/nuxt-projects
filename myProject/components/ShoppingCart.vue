@@ -1,18 +1,29 @@
 <template>
-  <nuxt-link :to="{ name: 'cart'}" class="mp-shopping-cart">
-    <i class="fa fa-shopping-cart" aria-hidden="true" />
-    <span class="mp-cart-quantity"> {{ favorites.length }}</span>
-  </nuxt-link>
+  <div>
+    <nuxt-link :to="{ name: 'cart'}" class="mp-shopping-cart">
+      <i class="fa fa-shopping-cart" aria-hidden="true" />
+      <span class="mp-cart-quantity"> {{ favorites.length }}</span>
+      <span v-if="orderCost > 0" class="order-price"> = {{ orderCost }} <i class="fa fa-credit-card" aria-hidden="true" /> </span>
+    </nuxt-link>
+  </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 export default {
   name: 'ShoppingCart',
-  computed: mapGetters({
-    favorites: 'favorites/items'
-  })
+  computed: {
+    ...mapGetters({
+      favorites: 'favorites/items'
+    }),
+    orderCost () {
+      return this.favorites.reduce(function (sum, item) {
+        return sum + item.price
+      }, 0)
+    }
+  }
 }
+
 </script>
 
 <style scoped>
@@ -30,14 +41,22 @@ export default {
 
   .mp-cart-quantity{
     display: inline-block;
-    background:#fafba4 ;
+    min-width: 20px;
+    min-height: 20px;
+    background: yellow;
     border-radius: 50%;
     box-sizing: border-box;
-    /*padding: 5px 8px;*/
+    padding: 4px;
     line-height: normal;
     text-align: center;
     font-size: 18px;
     position: absolute;
     top: -12px;
+  }
+
+  .order-price{
+    color:#007892;
+    margin-left: 25px;
+    font-size: 19px;
   }
 </style>

@@ -2,7 +2,7 @@
   <div class="d-flex flex-row justify-content-around  align-items-center mb-3 mp-wrapper-cart">
     <img :src="favorit.img" :alt="favorit.alt" class="mp-favorit-img">
 
-    <div class="mp-info">
+    <div class="mp-info d-flex flex-column">
       <div class="d-flex justify-content-between align-items-center mp-margin-bt">
         <h4 class="mp-title">
           {{ favorit.title }}

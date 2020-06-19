@@ -1,3 +1,7 @@
+nuxt-link{
+  text-decoration: none;
+}
+
 .mp-title {
   color: #862a5c;
 }
@@ -47,6 +51,10 @@
   color: white;
 }
 
+.mp-btn-checkout{
+  background:yellow ;
+  color: #74d4c0;
+}
 .fa-cutlery{
   margin-right: 5px;
 }

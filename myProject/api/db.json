@@ -1,38 +1,11 @@
 {
   "favorites": [
     {
-      "img": "https://i.pinimg.com/564x/bb/51/9c/bb519c5adb6c96b8f34b1028a2ccefe7.jpg",
-      "alt": "img-5",
-      "title": "Item - 5",
-      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
-      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.Ko run a bit longer so that you can see how spacing within an",
-      "price": 650,
-      "id": 5
-    },
-    {
-      "img": "https://i.pinimg.com/564x/3b/63/ed/3b63ed8501adfeffd5494b074905bc2e.jpg",
-      "alt": "img-4",
-      "title": "Item - 4",
-      "previewText": "But I must to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
-      "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Lorem ipsum  life dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
-      "price": 180,
-      "id": 4
-    },
-    {
-      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
-      "alt": "img-1",
-      "title": "Item - 1",
-      "previewText": "But I must explain to you how all thisdea of denouncing pleasure and praising pain was born and I will give you a complete",
-      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
-      "price": 250,
-      "id": 1
-    },
-    {
       "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
       "alt": "img-2",
       "title": "Item - 2",
-      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
-      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "previewText": "On the other hand, we denounce with righteous indignation dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem  test aperiam, eaque ipsa qu illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 270,
       "id": 2
     },
@@ -44,6 +17,24 @@
       "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 340,
       "id": 3
+    },
+    {
+      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
+      "alt": "img-1",
+      "title": "Item - 1",
+      "previewText": "But I must explain to you how all thisdea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 250,
+      "id": 1
+    },
+    {
+      "img": "https://i.pinimg.com/564x/bb/51/9c/bb519c5adb6c96b8f34b1028a2ccefe7.jpg",
+      "alt": "img-5",
+      "title": "Item - 5",
+      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.Ko run a bit longer so that you can see how spacing within an",
+      "price": 650,
+      "id": 5
     }
   ],
   "products": [
@@ -60,8 +51,8 @@
       "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
       "alt": "img-2",
       "title": "Item - 2",
-      "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
-      "description": "Totam rem  test aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "previewText": "On the other hand, we denounce with righteous indignation dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem  test aperiam, eaque ipsa qu illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
       "price": 270,
       "id": 2
     },

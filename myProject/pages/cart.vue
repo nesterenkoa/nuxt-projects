@@ -1,17 +1,16 @@
 <template>
   <div>
-    <div  v-if="favorites.length > 0">
-        <div class="d-flex justify-content-between">
-            <h2> Ваша корзина </h2>
-            <p @click="removeAllProducts">
-              <i class="fa fa-times" aria-hidden="true"></i>
-              Oчистить все
-            </p>
-        </div>
-        <ListCartProducts  />
+    <div v-if="favorites.length > 0">
+      <div class="d-flex justify-content-between">
+        <h2> Ваша корзина </h2>
+        <p @click="removeAllProducts">
+          <i class="fa fa-times" aria-hidden="true" />
+          Oчистить все
+        </p>
       </div>
+      <ListCartProducts />
+    </div>
     <BasketEmpy v-else />
-
   </div>
 </template>
 
@@ -31,7 +30,6 @@ export default {
   methods: mapActions({
     removeAllProducts: 'favorites/removeAll'
   })
-
 }
 </script>
 

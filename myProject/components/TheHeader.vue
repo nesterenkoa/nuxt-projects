@@ -86,7 +86,6 @@ export default {
 
   .mp-nav{
     color: #36C2CF;
-    text-decoration: none;
     position: relative;
   }
 
