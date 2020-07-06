@@ -6,16 +6,19 @@
       <Breadcrumb />
       <nuxt />
     </div>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheHeader from '../components/TheHeader'
 import Breadcrumb from '../components/Breadcrumb'
+import TheFooter from '../components/TheFooter'
 export default {
   components: {
     TheHeader,
-    Breadcrumb
+    Breadcrumb,
+    TheFooter
   },
   fetch ({ store }) {
     store.dispatch('favorites/load')
