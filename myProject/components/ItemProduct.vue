@@ -58,7 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+ }
 
   .mp-link-styles{
     text-decoration: none;
@@ -84,11 +84,7 @@ export default {
     display: block;
     width: 100%;
     max-height: 35vw;
-    /*object-fit: cover;*/
-    margin-bottom: 10px;
-  }
-
-  .mp-margin-bt {
+    object-fit: cover;
     margin-bottom: 10px;
   }
 

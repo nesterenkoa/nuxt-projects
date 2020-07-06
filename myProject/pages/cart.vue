@@ -1,9 +1,11 @@
 <template>
   <div>
     <div v-if="favorites.length > 0">
-      <div class="d-flex justify-content-between">
-        <h2> Ваша корзина </h2>
-        <p @click="removeAllProducts">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mp-cart-title">
+          Ваша корзина
+        </h2>
+        <p class="empty-trash" @click="removeAllProducts">
           <i class="fa fa-times" aria-hidden="true" />
           Oчистить все
         </p>
@@ -34,5 +36,15 @@ export default {
 </script>
 
 <style scoped>
+.mp-cart-title{
+  color: #862a5c;
+  font-size: 20px;
+  font-style: italic;
 
+}
+  .empty-trash{
+    color: red;
+    font-size: 13px;
+
+  }
 </style>

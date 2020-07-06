@@ -1,22 +1,25 @@
 <template>
   <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg mp-bg-nav">
-      <div class="container">
-        <nuxt-link :to="{name: 'home' }" class="navbar-brand  mr-5 mp-logo">
-          yuk
-        </nuxt-link>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon" />
-        </button>
-        <div id="navbarNav" class="collapse navbar-collapse mr-5 mp-navbar">
+    <nav class="navbar navbar-expand-lg mp-bg-nav ">
+      <div class="container d-flex flex-column justify-content-start flex-lg-row  justify-content-lg-between">
+        <div class="d-flex flex-row justify-content-between mp-wrapper">
+          <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">
+            yuk
+          </nuxt-link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" />
+          </button>
+        </div>
+
+        <div id="navbarNav" class="collapse navbar-collapse mp-navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
               <nuxt-link class="nav-link mp-nav" :to="{ name: 'home' }">
@@ -40,8 +43,11 @@
             </li>
           </ul>
         </div>
-        <SearchProducts />
-        <ShoppingCart />
+
+        <div class="d-flex  flex-column align-items-center flex-lg-row justify-content-lg-between  mp-width">
+          <SearchProducts />
+          <ShoppingCart />
+        </div>
       </div>
     </nav>
   </div>
@@ -62,6 +68,14 @@ export default {
 <style scoped>
   .mp-bg-nav {
     background: #d7fffd;
+  }
+
+  .mp-wrapper{
+    width: 100%;
+  }
+
+  .mp-width{
+    width: 100%;
   }
 
   .mp-logo {
@@ -109,5 +123,12 @@ export default {
     transition: all .5s;
     color: #41cdc5;
   }
-
+  @media (min-width: 992px){
+    .mp-wrapper{
+      width: auto;
+    }
+    .mp-width{
+      width: 55%;
+    }
+  }
 </style>

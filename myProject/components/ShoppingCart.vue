@@ -40,7 +40,6 @@ export default {
   }
 
   .mp-cart-quantity{
-    display: inline-block;
     min-width: 20px;
     min-height: 20px;
     background: yellow;
@@ -51,12 +50,12 @@ export default {
     text-align: center;
     font-size: 18px;
     position: absolute;
-    top: -12px;
+    top: -19px;
+    left: 22px
   }
 
   .order-price{
     color:#007892;
-    margin-left: 25px;
     font-size: 19px;
   }
 </style>

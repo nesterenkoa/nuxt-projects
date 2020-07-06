@@ -1,6 +1,15 @@
-nuxt-link{
+
+ nuxt-link{
   text-decoration: none;
+   cursor: pointer;
 }
+ h1,h2,h3,h4,h5,h6{
+   margin: 0;
+ }
+
+ p{
+   margin: 0;
+ }
 
 .mp-title {
   color: #862a5c;
@@ -16,6 +25,7 @@ nuxt-link{
 
 .mp-description {
   font-family: 'Montserrat';
+  font-size: 18px;
   color: #007892;
   min-height: 75px;
 }
@@ -31,7 +41,7 @@ nuxt-link{
   padding: 10px 15px;
   background: #fafba4;
   color: #862a5c;
-  align-self: flex-end;
+  /*align-self: flex-end;*/
   border-radius: 5px;
   border: transparent;
 }
@@ -58,3 +68,13 @@ nuxt-link{
 .fa-cutlery{
   margin-right: 5px;
 }
+
+ .mp-margin-bt {
+   margin-bottom: 10px;
+ }
+
+ @media (max-width: 767px) {
+   .mp-btn {
+     width: 100%
+   }
+ }

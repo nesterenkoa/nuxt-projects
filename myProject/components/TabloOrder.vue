@@ -1,12 +1,12 @@
 <template>
-  <div class="d-flex justify-content-between mp-wrapper">
-    <nuxt-link :to="{ name: 'products'}" class="mp-link-page-products">
+  <div class="d-flex  flex-column  align-items-center flex-md-row  justify-content-md-between mp-wrapper">
+    <nuxt-link :to="{ name: 'products'}" class="order-3 order-md-1 mp-link-page-products">
       <i class="fa fa-arrow-circle-left mr-2" aria-hidden="true" />
       Продолжить покупки
     </nuxt-link>
 
-    <span class="mp-order-cost">Сумма заказа: {{ orderCost }}  <i class="fa fa-credit-card" aria-hidden="true" /></span>
-    <button class="mp-btn mp-btn-checkout">
+    <span class="mb-1 mb-md-0 order-2 mp-order-cost">Сумма заказа: {{ orderCost }}  <i class="fa fa-credit-card" aria-hidden="true" /></span>
+    <button class="order-1 order-md-3 mb-1 mb-md-0 mp-btn mp-btn-checkout ">
       Оформить заказ
     </button>
   </div>

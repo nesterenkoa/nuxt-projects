@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex flex-row justify-content-around  align-items-center mb-3 mp-wrapper-cart">
-    <img :src="favorit.img" :alt="favorit.alt" class="mp-favorit-img">
+  <nuxt-link :to="{ name: 'product-details', params: { id: favorit.id } }" class="d-flex  flex-column flex-md-row justify-content-around  align-items-center mb-3 mp-wrapper-cart">
+    <img :src="favorit.img" :alt="favorit.alt" class=" mb-3 mb-md-0 mr-md-3 mp-favorit-img">
 
     <div class="mp-info d-flex flex-column">
       <div class="d-flex justify-content-between align-items-center mp-margin-bt">
@@ -15,14 +15,14 @@
 
       <p class="mp-description">
         <i class="fa fa-cutlery" aria-hidden="true" />
-        {{ favorit.description }}
+        {{ favorit.previewText }}
       </p>
-      <button class="mp-btn mp-btn-remove" @click.prevent="onRemoveFromFavorites(favorit)">
+      <button class="mp-btn mp-btn-remove al" @click.prevent="onRemoveFromFavorites(favorit)">
         <i class="fa fa-shopping-cart" aria-hidden="true" />
         Remove from favorites
       </button>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -46,13 +46,14 @@ export default {
   .mp-wrapper-cart{
     box-shadow: -2px 6px 10px 0 rgba(0, 0, 0, 0.46);
     padding: 15px;
+    text-decoration: none;
   }
+
   .mp-info{
     width: 70%;
   }
-.mp-favorit-img{
-  height: 16vw;
-  object-fit: contain;
-}
 
+ .mp-favorit-img{
+  height: 46vh;
+}
 </style>

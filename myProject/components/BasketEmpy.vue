@@ -18,6 +18,10 @@ export default {
 </script>
 
 <style scoped>
+  .mp-basket-empy{
+    display: block;
+    position: relative;
+  }
 
   .mp-text-basket{
     padding: 10px;
@@ -29,10 +33,6 @@ export default {
   .fa-frown-o{
     border-radius: 50%;
 }
-  .mp-basket-empy{
-    display: block;
-    position: relative;
-  }
 
   .mp-link-page-products{
     position: absolute;
