@@ -42,6 +42,17 @@
         </div>
       </div>
       <img class="order-1 order-lg-2 mb-3 mb-lg-0 mp-img-delivery" src="../assets/img/v873batch4-aum-22.jpg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10268.798490081961!2d36.29855942971525!3d49.95135774324773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270af7b8505dd1%3A0xd0168d5b14b4be01!2zNDnCsDU3JzIwLjEiTiAzNsKwMTgnMDMuNSJF!5e0!3m2!1sru!2sua!4v1594328869347!5m2!1sru!2sua"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      >
+      </iframe>
     </div>
 
       <div class="d-flex  align-items-center mp-wrapper">
