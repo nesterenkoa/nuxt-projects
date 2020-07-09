@@ -1,8 +1,8 @@
 <template>
-  <div>
+<footer class="mp-footer">
  <FooterSocialIcons />
   <Footer-contacts />
-  </div>
+</footer>
 </template>
 
 <script>
@@ -19,5 +19,7 @@ export default {
 </script>
 
 <style scoped>
-
+.mp-footer{
+  margin-top: 70px;
+}
 </style>
