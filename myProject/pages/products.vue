@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1 class="heading">Продукты</h1>
+    <span class="wrapper-divider"></span>
     <ListProducts />
   </div>
 </template>

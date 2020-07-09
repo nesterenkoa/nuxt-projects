@@ -16,6 +16,50 @@
    margin: 0;
    padding: 0;
  }
+ .heading{
+   text-align: center;
+   color: #862a5c;
+   font-size: 37px;
+   margin-bottom: 10px;
+ }
+ .styles-text{
+   color: #007892;
+   font-size: 17px;
+ }
+ .mp-info-heading{
+   font-size: 20px;
+   color: #862a5c;
+   text-align: center;
+ }
+ .wrapper-divider{
+   background:url('../img/3419302-avocado-fruit-green-healthy-sliced-vegetable_107404.svg');
+   background-size: cover;
+   display: block;
+   width: 45px;
+   height: 45px;
+   position: relative;
+   margin: 0 auto 25px;
+ }
+ .wrapper-divider:before{
+   position: absolute;
+   display: block;
+   content: '';
+   width: 112px;
+   height: 2px;
+   background: #74d4c0 ;
+   left: 100%;
+   bottom: 50%;
+ }
+ .wrapper-divider:after{
+   position: absolute;
+   display: block;
+   content: '';
+   width: 112px;
+   height: 2px;
+   background: #74d4c0;
+   right: 100%;
+   bottom: 50%;
+ }
 
 .mp-title {
   color: #862a5c;

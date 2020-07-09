@@ -1,8 +1,9 @@
 <template>
   <div class="mb-5">
-    <h1>
+    <h1 class="heading">
       Delivery
     </h1>
+    <span class="wrapper-divider"></span>
 
     <div class="mp-wrapper mb-4">
       <img  class="mp-banner" src="../assets/img/2153.jpg" alt="promo-Ddelivery">
@@ -12,7 +13,7 @@
        <img  class="mp-img-services" src="../assets/img/12b0a0e8249323e2f98f69bb192ffa0e.jpg">
 
          <div>
-             <h2 class="mb-3 mp-info-heading">Служба доставки сети «yuk» – это:</h2>
+             <h2 class="mb-3 mp-info-heading">Служба доставки сети «aVocado» – это:</h2>
 
              <ul class="mp-list-delivery-services">
                <li class="styles-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, tempora.</li>
@@ -80,12 +81,6 @@ export default {
     border-radius: 20px;
   }
 
-  .mp-info-heading{
-    font-size: 20px;
-    color: #862a5c;
-    text-align: center;
-  }
-
 .mp-list-delivery-services{
   width: 80%;
   margin: 0 auto;
@@ -117,10 +112,6 @@ export default {
     margin: 0 auto;
   }
 
-  .styles-text{
-    color: #007892;
-    font-size: 17px;
-  }
 .mp-img-time{
   width: 35%;
   transform: rotate(35deg);
@@ -130,6 +121,7 @@ export default {
 
 .mp-width{
   width: 50%;
+  text-align: center;
 }
   @media (min-width:920px) {
     .mp-img-services {
