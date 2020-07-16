@@ -4,7 +4,7 @@
       <div class="container d-flex flex-column justify-content-start flex-lg-row  justify-content-lg-between">
         <div class="d-flex flex-row justify-content-between mp-wrapper">
           <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">
-           aVocado
+            aVocado
           </nuxt-link>
           <button
             class="navbar-toggler"

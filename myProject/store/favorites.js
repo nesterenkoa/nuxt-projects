@@ -3,13 +3,16 @@ export const state = () => ({
 })
 
 export const getters = {
-  items: state => state.items,
+  items (state) {
+    return state.items
+  },
   isCanAdd (state) {
     return function (productId) {
       return state.items.findIndex(item => item.id === productId) === -1
     }
   }
 }
+
 export const actions = {
   async load ({ commit }) {
     let products = []

@@ -1,8 +1,8 @@
 <template>
-<footer class="mp-footer">
- <FooterSocialIcons />
-  <Footer-contacts />
-</footer>
+  <footer class="mp-footer">
+    <FooterSocialIcons />
+    <Footer-contacts />
+  </footer>
 </template>
 
 <script>

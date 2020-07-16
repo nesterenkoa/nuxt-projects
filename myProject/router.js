@@ -7,6 +7,7 @@ import Products from './pages/products'
 import Delivery from './pages/delivery'
 import ProductDetails from './pages/productDetails'
 import Cart from './pages/cart'
+import Form from './pages/form'
 Vue.use(Router)
 
 export function createRouter () {
@@ -37,6 +38,11 @@ export function createRouter () {
         name: 'cart',
         path: '/:lang?/cart',
         component: Cart
+      },
+      {
+        name: 'form',
+        path: '/:lang?/form',
+        component: Form
       },
       {
         name: 'home',

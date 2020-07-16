@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1 class="heading">Продукты</h1>
-    <span class="wrapper-divider"></span>
+    <h1 class="heading">
+      Продукты
+    </h1>
+    <span class="wrapper-divider" />
     <ListProducts />
   </div>
 </template>
