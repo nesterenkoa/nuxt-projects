@@ -1,40 +1,55 @@
 <template>
   <div>
-    <b-form v-if="show" @submit="order" @reset="onReset">
-      <p>{{ status }}</p>
+    <validation-observer v-slot="{  handleSubmit }" slim>
+    <b-form @submit.prevent="handleSubmit(order)" @reset="onReset">
+      <!--<p>{{ status }}</p>-->
+      <validation-provider v-slot="{ errors, classes }" :rules="{ required: true, min: 10 }" name ="Address"  >
       <b-form-group
         id="input-group-1"
-        label="User address:"
+        label= "User address"
         label-for="input-1"
         description="We'll never share your address with anyone else."
       >
+        <p class="text-danger mb-1" v-if="{errors}"> {{ errors[0] }}</p>
+
         <b-form-input
           id="input-1"
           v-model="form.address"
           type="text"
-          required
           placeholder="Your address..."
+          name="address"
+          :class="classes"
         />
       </b-form-group>
+      </validation-provider>
 
-      <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
-        <b-form-input
+      <validation-provider v-slot="{ errors, classes }" :rules="{ required: true, min: 2 }" name ="Name">
+        <b-form-group d="input-group-2" label="Your Name:" label-for="input-2">
+          <p class="text-danger mb-1" v-if="{errors}"> {{ errors[0] }}</p>
+          <b-form-input
           id="input-2"
           v-model="form.name"
           required
           placeholder="Your name"
+          pattern="^[a-zA-Z]+$"
+          minlength="2"
+          :class="classes"
         />
       </b-form-group>
+      </validation-provider>
 
+      <validation-provider v-slot="{ errors, classes }" :rules="{ required: true, regex: '^\\+\\d{2}\\d{3}\\d{3}\\d{2}\\d{2}$'}" name ="Phone">
       <b-form-group id="input-group-3" label="Your telephone:" label-for="input-3">
+        <p class="text-danger mb-1" v-for="error of errors" :key="error"> {{ error }}</p>
         <b-form-input
           id="input-3"
           v-model="form.telephone"
-          type="number"
           required
           placeholder="Your telephone"
+          :class="classes"
         />
-      </b-form-group>
+        </b-form-group>
+      </validation-provider>
 
       <b-form-group id="input-group-4" label="Delivery:" label-for="input-4">
         <b-form-select
@@ -63,6 +78,7 @@
         Reset
       </b-button>
     </b-form>
+    </validation-observer>
     <!--<b-card class="mt-3" header="Form Data Result">-->
     <!--<pre class="m-0">{{ form }}</pre>-->
     <!--</b-card>-->
@@ -82,17 +98,25 @@ export default {
       },
       delivery: ['Самовывоз', 'Наш курьeр', 'Glovo'],
       show: true,
+      errorShow: false,
       status: 'Idle'
+
     }
   },
   computed: mapGetters({
     items: 'favorites/items'
   }),
   methods: {
-    async order (evt) {
-      evt.preventDefault() // prevent form reset
+    async order () {
+      // evt.preventDefault() // prevent form reset
+      // this.status = 'Loading'
+      //
+      // if (this.form.name.length < 2 || !isNaN(this.form.name)) {
+      //   this.show = false
+      //   this.errorShow = true
+      //   return
+      // }
 
-      this.status = 'Loading'
       await this.$axios.$post('/delivery', { form: this.form, order: this.items })
         .then(() => { this.status = 'Success' })
         .catch((err) => { this.status = `Error: ${err.message}` })
@@ -123,4 +147,9 @@ export default {
 </script>
 
 <style scoped>
+  .has-error{
+    border: 1px solid red;
+    color: red;
+  }
+
 </style>

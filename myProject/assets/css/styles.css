@@ -114,7 +114,16 @@
 .mp-btn-checkout{
   background:yellow ;
   color: #74d4c0;
+  text-align: center;
+  text-decoration: none;
 }
+
+.mp-btn-checkout:hover{
+  color:yellow;
+  background: #74d4c0;
+  text-decoration: none;
+}
+
 .fa-cutlery{
   margin-right: 5px;
 }

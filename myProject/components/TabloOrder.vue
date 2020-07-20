@@ -6,11 +6,9 @@
     </nuxt-link>
 
     <span class="mb-1 mb-md-0 order-2 mp-order-cost">Сумма заказа: {{ orderCost }}  <i class="fa fa-credit-card" aria-hidden="true" /></span>
-    <button class="order-1 order-md-3 mb-1 mb-md-0 mp-btn mp-btn-checkout ">
-      <nuxt-link :to="{ name: 'form'}">
-        Оформить заказ
-      </nuxt-link>
-    </button>
+    <nuxt-link class="order-1 order-md-3 mb-1 mb-md-0 mp-btn mp-btn-checkout" :to="{ name: 'form'}">
+      Оформить заказ
+    </nuxt-link>
   </div>
 </template>
 
