@@ -2,7 +2,8 @@
 export default {
   mode: 'universal',
   router: {
-    prefetchLinks: false
+    prefetchLinks: false,
+    middleware: ['i18n']
   },
   /*
   ** Headers of the page
@@ -33,7 +34,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    'plugins/validate.js'
+    'plugins/validate.js',
+    'plugins/i18n.js'
   ],
   /*
   ** Nuxt.js dev-modules

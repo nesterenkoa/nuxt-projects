@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg mp-bg-nav ">
       <div class="container d-flex flex-column justify-content-start flex-lg-row  justify-content-lg-between">
         <div class="d-flex flex-row justify-content-between mp-wrapper">
-          <nuxt-link :to="{name: 'home' }" class="navbar-brand mp-logo">
+          <nuxt-link :to="{name: 'home', params:{ lang } }" class="navbar-brand mp-logo">
             aVocado
           </nuxt-link>
           <button
@@ -22,23 +22,23 @@
         <div id="navbarNav" class="collapse navbar-collapse mp-navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'home' }">
-                home<span class="sr-only">(current)</span>
+              <nuxt-link class="nav-link mp-nav" :to="{ name: 'home', params: { lang } }">
+                {{ $t('nav.home') }}<span class="sr-only">(current)</span>
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'products' }">
-                products
+              <nuxt-link class="nav-link mp-nav" :to="{ name: 'products', params: { lang } }">
+                {{ $t('nav.products') }}{{ `lang is ${lang}` }}
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'delivery' }">
-                delivery
+              <nuxt-link class="nav-link mp-nav" :to="{ name: 'delivery', params: { lang } }">
+                {{ $t('nav.delivery') }}
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'about' }">
-                about us
+              <nuxt-link class="nav-link mp-nav" :to="{ name: 'about', params: { lang } }">
+                {{ $t('nav.abous') }}
               </nuxt-link>
             </li>
           </ul>
@@ -54,6 +54,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import SearchProducts from '../components/SearchProducts'
 import ShoppingCart from '../components/ShoppingCart'
 export default {
@@ -61,7 +62,10 @@ export default {
   components: {
     SearchProducts,
     ShoppingCart
-  }
+  },
+  computed: mapGetters({
+    lang: 'localization/locale'
+  })
 }
 </script>
 

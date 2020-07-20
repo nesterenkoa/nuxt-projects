@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="{ name: 'product-details', params: { id: favorit.id } }" class="d-flex  flex-column flex-md-row justify-content-around  align-items-center mb-3 mp-wrapper-cart">
+  <nuxt-link :to="{ name: 'product-details', params: {id: favorit.id } }" class="d-flex  flex-column flex-md-row justify-content-around  align-items-center mb-3 mp-wrapper-cart">
     <img :src="favorit.img" :alt="favorit.alt" class=" mb-3 mb-md-0 mr-md-3 mp-favorit-img">
 
     <div class="mp-info d-flex flex-column">
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'ItemCartProduct',
@@ -36,6 +36,9 @@ export default {
       required: true
     }
   },
+  computed: mapGetters({
+    lang: 'localization/locale'
+  }),
   methods: mapActions({
     onRemoveFromFavorites: 'favorites/remove'
   })

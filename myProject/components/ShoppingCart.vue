@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link :to="{ name: 'cart'}" class="mp-shopping-cart">
+    <nuxt-link :to="{ name: 'cart', params: { lang} }" class="mp-shopping-cart">
       <i class="fa fa-shopping-cart" aria-hidden="true" />
       <span class="mp-cart-quantity"> {{ favorites.length }}</span>
       <span v-if="orderCost > 0" class="order-price"> = {{ orderCost }} <i class="fa fa-credit-card" aria-hidden="true" /> </span>
@@ -14,7 +14,8 @@ export default {
   name: 'ShoppingCart',
   computed: {
     ...mapGetters({
-      favorites: 'favorites/items'
+      favorites: 'favorites/items',
+      lang: 'localization/locale'
     }),
     orderCost () {
       return this.favorites.reduce(function (sum, item) {

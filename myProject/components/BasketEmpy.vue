@@ -5,15 +5,19 @@
       <i class="fa fa-frown-o" aria-hidden="true" />
     </p>
     <img src="../assets/img/basket.jpg">
-    <nuxt-link class="mp-link-page-products" :to="{name: 'products'}">
+    <nuxt-link class="mp-link-page-products" :to="{name: 'products', params: { lang } }">
       Вернуться к выбору блюд
     </nuxt-link>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'BasketEmpy'
+  name: 'BasketEmpy',
+  computed: mapGetters({
+    lang: 'localization/locale'
+  })
 }
 </script>
 
