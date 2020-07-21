@@ -1,9 +1,12 @@
 export const state = () => ({
-  items: []
+  items: [],
+  product: {}
 })
 
 export const getters = {
-  items: store => store.items
+  items: store => store.items,
+  product: store => store.product,
+  item: store => id => store.items.find(i => i.id === id)
 }
 
 export const actions = {
@@ -15,6 +18,15 @@ export const actions = {
       console.log(e)
     }
     commit('saveProducts', products)
+  },
+  async loadSingle ({ commit, store }, id) {
+    let product = {}
+    try {
+      product = await this.$axios.$get(`/products/${id}`)
+    } catch (e) {
+      console.log(e)
+    }
+    commit('saveSingleProduct', product)
   },
   async search ({ commit }, q) {
     let products = []
@@ -31,5 +43,8 @@ export const actions = {
 export const mutations = {
   saveProducts (state, products) {
     state.items = products
+  },
+  saveSingleProduct (state, product) {
+    state.product = product
   }
 }

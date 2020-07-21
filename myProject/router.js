@@ -17,37 +17,90 @@ export function createRouter () {
       {
         name: 'about',
         path: '/:lang?/about',
-        component: About
+        component: About,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', to: { name: 'home' } },
+            { name: 'nav.about', active: true }
+          ]
+        }
       },
       {
         name: 'products',
         path: '/:lang?/products',
-        component: Products
+        component: Products,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', to: { name: 'home' } },
+            { name: 'nav.products', active: true }
+          ]
+        }
       },
       {
         name: 'product-details',
         path: '/:lang?/product/:id',
-        component: ProductDetails
+        component: ProductDetails,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', to: { name: ' home' } },
+            { name: 'nav.products', to: { name: 'products' } },
+            { name: 'nav.product-details', active: true }
+          ]
+        }
       },
       {
         name: 'delivery',
         path: '/:lang?/delivery',
-        component: Delivery
+        component: Delivery,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', to: { name: 'home' } },
+            { name: 'nav.delivery', active: true }
+          ]
+        }
       },
       {
         name: 'cart',
         path: '/:lang?/cart',
-        component: Cart
+        component: Cart,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', to: { name: 'home' } },
+            { name: 'nav.cart', active: true }
+          ]
+        }
       },
       {
         name: 'form',
         path: '/:lang?/form',
-        component: Form
+        component: Form,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', to: { name: 'home' } },
+            { name: 'nav.cart', to: { name: 'cart' } },
+            { name: 'nav.form', active: true }
+          ]
+        }
       },
       {
         name: 'home',
         path: '/:lang?/home',
-        component: Home
+        component: Home,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', active: true }
+          ]
+        }
+      },
+      {
+        name: 'home',
+        path: '/:lang?',
+        component: Home,
+        meta: {
+          breadcrumb: [
+            { name: 'nav.home', active: true }
+          ]
+        }
       }
     ]
   })

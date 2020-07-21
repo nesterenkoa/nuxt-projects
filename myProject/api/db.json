@@ -2,13 +2,22 @@
   "delivery": [],
   "favorites": [
     {
-      "img": "https://i.pinimg.com/564x/ba/a3/88/baa388dae1fceabbc421d3b1f1a97c5d.jpg",
-      "alt": "img-3",
-      "title": "Item - 3",
-      "previewText": "Aww yeah, this lhjgfbjhfg hgfdeeu h important  hjgj bestik good. This example text is going to run a bit longer so that you can see.",
-      "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
-      "price": 340,
-      "id": 3
+      "img": "https://i.pinimg.com/564x/21/28/40/212840ec3392079289df80667986210c.jpg",
+      "alt": "img-2",
+      "title": "Item - 2",
+      "previewText": "On the other hand, we denounce with righteous indignation dislike men who are so beguiled and demoralized by the charms of",
+      "description": "Totam rem  test aperiam, eaque ipsa qu illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 270,
+      "id": 2
+    },
+    {
+      "img": "https://i.pinimg.com/564x/12/fc/33/12fc33ee43f3b047d67cdac2f6065b71.jpg",
+      "alt": "img-1",
+      "title": "Item - 1",
+      "previewText": "But I must explain to you how all thisdea of denouncing pleasure and praising pain was born and I will give you a complete",
+      "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "price": 250,
+      "id": 1
     }
   ],
   "products": [

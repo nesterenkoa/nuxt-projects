@@ -34,16 +34,20 @@ import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'ProductDetails',
-  async asyncData ({ $axios, params, error }) {
-    try {
-      const product = await $axios.$get(`/products/${params.id}`)
-      return { product }
-    } catch (e) {
-      return error(e)
-    }
+  // async asyncData({$axios, params, error}) {
+  //   try {
+  //     const product = await $axios.$get(`/products/${params.id}`)
+  //     return {product}
+  //   } catch (e) {
+  //     return error(e)
+  //   }
+  // },
+  async fetch ({ store, params }) {
+    await store.dispatch('products/loadSingle', params.id)
   },
   computed: mapGetters({
-    isCanAdd: 'favorites/isCanAdd'
+    isCanAdd: 'favorites/isCanAdd',
+    product: 'products/product'
   }),
   methods: mapActions({
     onAddToFavorites: 'favorites/add',

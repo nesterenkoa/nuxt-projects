@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "home",
+    "abous": "abous us",
     "products": "products",
     "delivery": "delivery",
-    "abous": "abous us"
+    "cart": "cart",
+    "form": "form",
+    "product-details":"product-details"
   }
 }

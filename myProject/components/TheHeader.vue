@@ -1,25 +1,15 @@
 <template>
   <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg mp-bg-nav ">
+    <b-navbar toggleable="lg" class="mp-bg-nav">
       <div class="container d-flex flex-column justify-content-start flex-lg-row  justify-content-lg-between">
         <div class="d-flex flex-row justify-content-between mp-wrapper">
           <nuxt-link :to="{name: 'home', params:{ lang } }" class="navbar-brand mp-logo">
             aVocado
           </nuxt-link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon" />
-          </button>
+          <b-navbar-toggle target="nav-collapse" />
         </div>
 
-        <div id="navbarNav" class="collapse navbar-collapse mp-navbar">
+        <b-collapse id="nav-collapse" is-nav>
           <ul class="navbar-nav">
             <li class="nav-item">
               <nuxt-link class="nav-link mp-nav" :to="{ name: 'home', params: { lang } }">
@@ -28,7 +18,7 @@
             </li>
             <li class="nav-item">
               <nuxt-link class="nav-link mp-nav" :to="{ name: 'products', params: { lang } }">
-                {{ $t('nav.products') }}{{ `lang is ${lang}` }}
+                {{ $t('nav.products') }}
               </nuxt-link>
             </li>
             <li class="nav-item">
@@ -42,14 +32,14 @@
               </nuxt-link>
             </li>
           </ul>
-        </div>
+        </b-collapse>
 
         <div class="d-flex  flex-column align-items-center flex-lg-row justify-content-lg-between  mp-width">
           <SearchProducts />
           <ShoppingCart />
         </div>
       </div>
-    </nav>
+    </b-navbar>
   </div>
 </template>
 
