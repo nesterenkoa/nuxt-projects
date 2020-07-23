@@ -84,7 +84,7 @@
   padding: 10px 15px;
   align-self: flex-end;
   border-radius: 5px;
-  border: transparent;
+  border-color: transparent;
 }
 
 .mp-btn-order{

@@ -2,16 +2,7 @@
   <div class="col-lg-4 col-md-6 col-sm-12">
     <nuxt-link
       class="mp-link-styles"
-      :to="{ name: 'product-details', params: { id: product.id },
-             meta: {
-               breadcrumbs: $route.meta.breadcrumb.concat([
-                 {
-                   name: product.title,
-                   active: true
-                 }
-               ])
-             }
-      }"
+      :to="{ name: 'product-details', params: { id: product.id } }"
     >
       <div class="mp-gallery-item">
         <img :src="product.img" :alt="product.alt">

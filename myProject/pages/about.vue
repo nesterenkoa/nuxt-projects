@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="d-flex flex-column justify-content-center  flex-lg-row justify-content-lg-between align-items-center ">
+    <div class="d-flex flex-column justify-content-center  flex-lg-row justify-content-lg-between align-items-center mb-4">
       <div class="mb-4 mb-lg-0 mr-lg-4">
         <h2 class="mb-3 mp-info-heading">
           Lorem ipsum dolor sit.

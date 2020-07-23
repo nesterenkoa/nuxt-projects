@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-4">
     <validation-observer v-slot="{ handleSubmit }" slim>
       <b-form @submit.prevent="handleSubmit(order)" @reset="onReset">
         <!--<p>{{ status }}</p>-->
@@ -66,28 +66,14 @@
           />
         </b-form-group>
 
-        <b-form-group id="input-group-5">
-          <b-form-checkbox-group id="checkboxes-5" v-model="form.checked">
-            <b-form-checkbox value="me">
-              Check me out
-            </b-form-checkbox>
-            <b-form-checkbox value="that">
-              Check that out
-            </b-form-checkbox>
-          </b-form-checkbox-group>
-        </b-form-group>
-
-        <b-button type="submit" variant="primary">
+        <b-button type="submit" class="mp-btn mp-btn-checkout">
           Submit
         </b-button>
-        <b-button type="reset" variant="danger">
+        <b-button type="reset" class="mp-btn mp-btn-remove">
           Reset
         </b-button>
       </b-form>
     </validation-observer>
-    <!--<b-card class="mt-3" header="Form Data Result">-->
-    <!--<pre class="m-0">{{ form }}</pre>-->
-    <!--</b-card>-->
   </div>
 </template>
 
@@ -153,6 +139,9 @@ export default {
 </script>
 
 <style scoped>
+  .btn-sumbit{
+    background: ;
+  }
   .has-error{
     border: 1px solid red;
     color: red;

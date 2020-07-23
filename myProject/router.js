@@ -20,8 +20,8 @@ export function createRouter () {
         component: About,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', to: { name: 'home' } },
-            { name: 'nav.about', active: true }
+            { text: 'home', to: { name: 'home' } },
+            { text: 'about', active: true }
           ]
         }
       },
@@ -31,8 +31,8 @@ export function createRouter () {
         component: Products,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', to: { name: 'home' } },
-            { name: 'nav.products', active: true }
+            { text: 'home', to: { name: 'home' } },
+            { text: 'products', active: true }
           ]
         }
       },
@@ -42,9 +42,9 @@ export function createRouter () {
         component: ProductDetails,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', to: { name: ' home' } },
-            { name: 'nav.products', to: { name: 'products' } },
-            { name: 'nav.product-details', active: true }
+            { text: 'home', to: { name: ' home' } },
+            { text: 'products', to: { name: 'products' } },
+            { text: 'product-details', active: true }
           ]
         }
       },
@@ -54,8 +54,8 @@ export function createRouter () {
         component: Delivery,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', to: { name: 'home' } },
-            { name: 'nav.delivery', active: true }
+            { text: 'home', to: { name: 'home' } },
+            { text: 'delivery', active: true }
           ]
         }
       },
@@ -65,8 +65,8 @@ export function createRouter () {
         component: Cart,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', to: { name: 'home' } },
-            { name: 'nav.cart', active: true }
+            { text: 'home', to: { name: 'home' } },
+            { text: 'cart', active: true }
           ]
         }
       },
@@ -76,9 +76,9 @@ export function createRouter () {
         component: Form,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', to: { name: 'home' } },
-            { name: 'nav.cart', to: { name: 'cart' } },
-            { name: 'nav.form', active: true }
+            { text: 'home', to: { name: 'home' } },
+            { text: 'cart', to: { name: 'cart' } },
+            { text: 'form', active: true }
           ]
         }
       },
@@ -88,7 +88,7 @@ export function createRouter () {
         component: Home,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', active: true }
+            { text: 'home', active: true }
           ]
         }
       },
@@ -98,7 +98,7 @@ export function createRouter () {
         component: Home,
         meta: {
           breadcrumb: [
-            { name: 'nav.home', active: true }
+            { text: 'home', active: true }
           ]
         }
       }

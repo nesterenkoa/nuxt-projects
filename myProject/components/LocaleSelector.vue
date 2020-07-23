@@ -1,6 +1,6 @@
 <template>
-  <b-dropdown id="locale-selector" :text="locale" class="m-md-2">
-    <b-dropdown-item v-for="locale of locales" :key="locale" @click.prevent="changeLanguage(locale)">
+  <b-dropdown id="locale-selector" :text="locale" class="m-md-2 mp-locale-selector">
+    <b-dropdown-item v-for="locale of locales" :key="locale"  class="mp-locale-selector" @click.prevent="changeLanguage(locale)">
       {{ locale }}
     </b-dropdown-item>
   </b-dropdown>
@@ -27,5 +27,8 @@ export default {
 </script>
 
 <style scoped>
+.mp-locale-selector * btn{
+    background-color: orange;
+  }
 
 </style>
