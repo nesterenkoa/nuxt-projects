@@ -58,5 +58,6 @@ export default {
 
  .mp-favorit-img{
   height: 46vh;
+   position: relative;
 }
 </style>

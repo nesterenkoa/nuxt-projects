@@ -40,7 +40,7 @@
         <div class="d-flex  flex-column align-items-center flex-lg-row justify-content-lg-between  mp-width">
           <SearchProducts />
           <ShoppingCart />
-          <LocaleSelector  class="d-none d-lg-block"/>
+          <LocaleSelector class="d-none d-lg-block" />
         </div>
       </div>
     </b-navbar>

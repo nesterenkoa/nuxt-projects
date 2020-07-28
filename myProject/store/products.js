@@ -6,7 +6,8 @@ export const state = () => ({
 export const getters = {
   items: store => store.items,
   product: store => store.product,
-  item: store => id => store.items.find(i => i.id === id)
+  item: store => id => store.items.find(i => i.id === id),
+  newItems: store => store.items.filter(i => !!i.new)
 }
 
 export const actions = {

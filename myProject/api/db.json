@@ -34,7 +34,9 @@
       "title": "Item - 1",
       "previewText": "But I must explain to you how all thisdea of denouncing pleasure and praising pain was born and I will give you a complete",
       "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "380 gramme",
       "price": 250,
+      "new": true,
       "id": 1
     }
   ],
@@ -45,6 +47,7 @@
       "title": "Item - 1",
       "previewText": "But I must explain to you how all thisdea of denouncing pleasure and praising pain was born and I will give you a complete",
       "description": "Lorem ipsum dolor good sit amet, consectetur adipiscing elit, sed do eiusmod tempom.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "380 gramme",
       "price": 250,
       "id": 1
     },
@@ -54,7 +57,9 @@
       "title": "Item - 2",
       "previewText": "On the other hand, we denounce with righteous indignation dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem  test aperiam, eaque ipsa qu illo inventore i  beatae vitae dicta sunt explicabo.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "780 gramme",
       "price": 270,
+      "new": true,
       "id": 2
     },
     {
@@ -63,7 +68,9 @@
       "title": "Item - 3",
       "previewText": "Aww yeah, this hgfdeeu h important  hjgj bestik good. This example text is going to run a bit longer so that you can see.",
       "description": "But et iust Besta ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "560 gramme",
       "price": 340,
+      "new": true,
       "id": 3
     },
     {
@@ -72,6 +79,7 @@
       "title": "Item - 4",
       "previewText": "But I to you how all this gertt gtred mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete",
       "description": "This is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Lorem ipsum  life dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom",
+      "weight": "345 gramme",
       "price": 180,
       "id": 4
     },
@@ -81,6 +89,7 @@
       "title": "Item - 5",
       "previewText": "On the other hand, we with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.Ko run a bit longer so that you can see how spacing within an",
+      "weight": "234 gramme",
       "price": 650,
       "id": 5
     },
@@ -90,6 +99,7 @@
       "title": "Item - 6",
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
       "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "230 gramme",
       "price": 350,
       "id": 6
     },
@@ -99,6 +109,7 @@
       "title": "Item - 7",
       "previewText": "On the other, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "980 gramme",
       "price": 230,
       "id": 7
     },
@@ -108,6 +119,7 @@
       "title": "Item - 9",
       "previewText": "On the other, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "453 gramme",
       "price": 120,
       "id": 8
     },
@@ -117,6 +129,7 @@
       "title": "Item - 9",
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.",
+      "weight": "567 gramme",
       "price": 540,
       "id": 9
     },
@@ -126,6 +139,7 @@
       "title": "Item - 10",
       "previewText": "On the other hand, we  with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "390 gramme",
       "price": 130,
       "id": 10
     },
@@ -135,6 +149,7 @@
       "title": "Item - 11",
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
       "description": "This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "770 gramme",
       "price": 170,
       "id": 11
     },
@@ -144,6 +159,7 @@
       "title": "Item - 12",
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
       "description": "ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "800 gramme",
       "price": 230,
       "id": 12
     },
@@ -153,6 +169,7 @@
       "title": "Item - 13",
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "654 gramme",
       "price": 430,
       "id": 13
     },
@@ -162,6 +179,7 @@
       "title": "Item - 14",
       "previewText": "Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see .",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth",
+      "weight": "500 gramme",
       "price": 140,
       "id": 14
     },
@@ -171,6 +189,7 @@
       "title": "Item - 15",
       "previewText": "On the other hand, we with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui offici.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "450 gramme",
       "price": 570,
       "id": 15
     },
@@ -180,6 +199,7 @@
       "title": "Item - 16",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.",
+      "weight": "300 gramme",
       "price": 270,
       "id": 16
     },
@@ -189,6 +209,7 @@
       "title": "Item - 17",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain . voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "280 gramme",
       "price": 380,
       "id": 17
     },
@@ -198,6 +219,7 @@
       "title": "Item - 18",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain, rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "190 gramme",
       "price": 340,
       "id": 18
     },
@@ -207,6 +229,7 @@
       "title": "Item - 19",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaque.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain. Ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "200 gramme",
       "price": 455,
       "id": 19
     },
@@ -216,7 +239,9 @@
       "title": "Item - 20",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain.Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "679 gramme",
       "price": 129,
+      "new": true,
       "id": 20
     },
     {
@@ -225,6 +250,7 @@
       "title": "Item - 21",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain,aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "400 gramme",
       "price": 670,
       "id": 21
     },
@@ -234,6 +260,7 @@
       "title": "Item - 22",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owin. Totam rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "600 gramme",
       "price": 123,
       "id": 22
     },
@@ -243,6 +270,7 @@
       "title": "Item - 23",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem aperiam, eaqu.These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing. ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "250 gramme",
       "price": 430,
       "id": 23
     },
@@ -252,6 +280,7 @@
       "title": "Item - 24",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing,rem aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "100 gramme",
       "price": 570,
       "id": 24
     },
@@ -261,6 +290,7 @@
       "title": "Item - 25",
       "previewText": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of",
       "description": "Totam rem.These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing, aperiam, eaque ipsa quae ab illo inventore  et quasi architecto beata.",
+      "weight": "550 gramme",
       "price": 170,
       "id": 25
     }

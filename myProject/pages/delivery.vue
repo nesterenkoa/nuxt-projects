@@ -36,19 +36,19 @@
     </div>
 
     <!--<div class="d-flex  align-items-center mb-4 mp-wrapper">-->
-      <!--<img class="mp-img-time" src="../assets/img/caja-paquete-volador-alas_8580-86.jpg">-->
+    <!--<img class="mp-img-time" src="../assets/img/caja-paquete-volador-alas_8580-86.jpg">-->
 
-      <!--<div class="mp-width">-->
-        <!--<h2 class="mb-3 mp-info-heading">-->
-          <!--Time-->
-        <!--</h2>-->
+    <!--<div class="mp-width">-->
+    <!--<h2 class="mb-3 mp-info-heading">-->
+    <!--Time-->
+    <!--</h2>-->
 
-        <!--<p class="styles-text">-->
-            <!--Доставка еды происходит:-->
-          <!--</p><p>- вс - чт с 10:00 до 22:00</p>-->
-          <!--<p>- пт - сб с 10:00 до 2:00</p>-->
-        <!--</p>-->
-      <!--</div>-->
+    <!--<p class="styles-text">-->
+    <!--Доставка еды происходит:-->
+    <!--</p><p>- вс - чт с 10:00 до 22:00</p>-->
+    <!--<p>- пт - сб с 10:00 до 2:00</p>-->
+    <!--</p>-->
+    <!--</div>-->
     <!--</div>-->
 
     <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between mb-5 mp-wrapper">
@@ -112,7 +112,15 @@ export default {
     color: #862a5c;
     text-align: center;
   }
-
+  .wrapper-divider{
+    background:url('../assets/img/product.svg');
+    background-size: cover;
+    display: block;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    margin: 0 auto 25px;
+  }
 .mp-list-delivery-services{
   width: 80%;
   margin: 0 auto;

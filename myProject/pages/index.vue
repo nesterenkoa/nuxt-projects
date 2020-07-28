@@ -13,6 +13,9 @@ export default {
   components: {
     Slider,
     NewItemsProducts
+  },
+  async created () {
+    await this.$store.dispatch('products/load')
   }
 }
 </script>

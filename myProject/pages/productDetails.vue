@@ -10,6 +10,7 @@
           {{ product.title }}
         </h4>
         <p class="mp-price">
+          <i class="fa fa-tags" aria-hidden="true" />
           {{ product.price }}
         </p>
       </div>

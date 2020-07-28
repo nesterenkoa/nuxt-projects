@@ -1,30 +1,29 @@
 <template>
-  <div class="">
-    <h3 class="mp-heading">
+  <div>
+    <h3 class="mb-4 heading">
       Новинки
     </h3>
-    <div class="row">
-      <nuxt-link v-for="item of newItems" :key="item.id" class="col-lg-4 col-md-6 col-sm-12 mp-link-styles" to="#">
-        <div class="mp-gallery-item">
-          <img :src="item.image" :alt="item.alt">
 
-          <div class="mp-test">
-            <div class="d-flex justify-content-between align-items-center mp-margin-bt">
-              <h4 class="mp-title">
-                {{ item.title }}
-              </h4>
-              <p class="mp-price">
-                {{ item.price }}
-              </p>
-            </div>
-            <p class="mp-description">
-              {{ item.description }}
-            </p>
+    <div class="row d-flex flex-column flex-md-row justify-content-md-between">
+      <nuxt-link v-for="product of newItems" :key="product.id" class=" d-flex  justify-content-center align-items-center mb-4 col-sm-12 col-md-4  mp-link-styles" :to="{ name: 'product-details', params: { id: product.id } }">
+        <div class="mp-wrapper-img mr-4 mr-md-2 mr-lg-4">
+          <!--<div class="mp-icon-new"> <i class="fa fa-tags" aria-hidden="true" /></div>-->
+          <img :src="product.img" :alt="product.alt">
+        </div>
 
-            <button class="mp-btn mp-btn-order">
-              Order
-            </button>
+        <div class="mp-info-product">
+          <div class="d-flex justify-content-between align-items-center mb-3 flex-md-column align-items-md-start">
+            <h4 class="mp-title mb-md-2">
+              {{ product.title }}
+            </h4>
+            <span class="mp-price">
+              <i class="fa fa-tags" aria-hidden="true" />
+              {{ product.price }}
+            </span>
           </div>
+          <p class="mp-product-description">
+            {{ product.previewText.substr(0,60) + '...' }}
+          </p>
         </div>
       </nuxt-link>
     </div>
@@ -32,115 +31,96 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'NewItemsProducts',
-  data: () => ({
-    newItems: [
-      {
-        image: require('../assets/img/img-1.jpg'),
-        alt: 'img-1',
-        title: 'Item - 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom',
-        price: 250,
-        id: 1
-      },
-      {
-        image: require('../assets/img/img-2.jpg'),
-        alt: 'img-2',
-        title: 'Item - 2',
-        description: 'Totam rem aperiam, eaque ipsa quae ab illo inventore i  beatae vitae dicta sunt explicabo.',
-        price: 270,
-        id: 2
-      },
-      {
-        image: require('../assets/img/img-3.jpg'),
-        alt: 'img-3',
-        title: 'Item - 3',
-        description: 'But et iust ducimus qui blanditiis  deleniti atque  quos dolorese a pain was born and I will ',
-        price: 340,
-        id: 3
-      },
-      {
-        image: require('../assets/img/img-4.jpg'),
-        alt: 'img-4',
-        title: 'Item - 4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempom',
-        price: 650,
-        id: 4
-      }]
-  })
+  computed: {
+    ...mapGetters({
+      newItems: 'products/newItems'
+    })
+  },
+  created () {
+    console.log('Created', { newItems: this.newItems, products: this.products })
+  },
+  updated () {
+    console.log('Updated', { newItems: this.newItems, products: this.products })
+  }
 }
 </script>
 
 <style scoped>
-  .mp-heading{
-    text-align: center;
-  }
-  .mp-test{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .mp-wrapper-img{
+    width: 40vw;
+    position: relative;
   }
 
+  .mp-wrapper-img img {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0;
+  }
+  .mp-wrapper-img:after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 19%;
+    top: 5px;
+    left: 5px;
+    /*transform: translate(50%);*/
+    background: url("../assets/img/new.svg")no-repeat;
+  }
+
+  .mp-info-product{
+    border: 2px dashed pink;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .mp-title{
+    font-size:16px ;
+  }
+
+.mp-product-description{
+  width: 100%;
+  font-size: 12px;
+  color: #7f828b;
+  margin: 0;
+}
+.mp-price{
+  padding: 2px;
+  font-size: 12px;
+}
   .mp-link-styles{
     text-decoration: none;
   }
-  .mp-gallery-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*height: 500px;*/
-    padding: 15px;
-    box-sizing: border-box;
-    box-shadow: -2px 6px 10px 0 rgba(0, 0, 0, 0.46);
-    position: relative;
-    margin-bottom: 10%;
+
+  @media (min-width: 310px ) and (max-width: 450px) {
+    .mp-wrapper-img{
+      width: 80vw;
+    }
+  }
+  @media (min-width: 768px ) {
+    .mp-wrapper-img {
+      width: 50vw;
+    }
+
+    .mp-info-product {
+      border: none;
+      padding: 0;
+    }
+
+  }
+  @media (min-width:1000px ){
+    .mp-title{
+      font-size:24px ;
+    }
+
+    .mp-product-description {
+      font-size: 16px;
+    }
   }
 
-  .row .mp-gallery-item:last-child {
-    margin-right: 0;
-  }
-
-  .mp-gallery-item img {
-    display: block;
-    width: 100%;
-    height: 29vw;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-
-  .mp-margin-bt {
-    margin-bottom: 10px;
-  }
-
-  .mp-title {
-    color: #862a5c;
-  }
-
-  .mp-price {
-    padding: 10px;
-    margin: 0;
-    background: #eca0b6;
-    border-radius: 5px;
-    color: white;
-  }
-
-  .mp-description {
-    color: #007892;
-    min-height: 75px;
-  }
-
-  .mp-btn-order{
-    padding: 10px 15px;
-    background: #fafba4;
-    color: #862a5c;
-    align-self: flex-end;
-    border-radius: 5px;
-    border: transparent;
-  }
-
-  .mp-btn-order:hover{
-    background: #74d4c0;
-    color: white;
-  }
 </style>

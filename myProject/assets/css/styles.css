@@ -31,15 +31,7 @@
    color: #862a5c;
    text-align: center;
  }
- .wrapper-divider{
-   background:url('../img/3419302-avocado-fruit-green-healthy-sliced-vegetable_107404.svg');
-   background-size: cover;
-   display: block;
-   width: 45px;
-   height: 45px;
-   position: relative;
-   margin: 0 auto 25px;
- }
+
  .wrapper-divider:before{
    position: absolute;
    display: block;
@@ -49,6 +41,7 @@
    background: #74d4c0 ;
    left: 100%;
    bottom: 50%;
+   margin-left: 10px;
  }
  .wrapper-divider:after{
    position: absolute;
@@ -59,6 +52,7 @@
    background: #74d4c0;
    right: 100%;
    bottom: 50%;
+   margin-right: 10px;
  }
 
 .mp-title {

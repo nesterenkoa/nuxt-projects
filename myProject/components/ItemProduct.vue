@@ -5,8 +5,9 @@
       :to="{ name: 'product-details', params: { id: product.id } }"
     >
       <div class="mp-gallery-item">
-        <img :src="product.img" :alt="product.alt">
-
+        <div :class="{ mpIconNew: product.new }">
+          <img :src="product.img" :alt="product.alt">
+        </div>
         <div class="mp-test">
           <div class="d-flex justify-content-between align-items-center mp-margin-bt">
             <h4 class="mp-title">
@@ -71,12 +72,27 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*height: 500px;*/
+    position: relative;
     padding: 15px;
     box-sizing: border-box;
     box-shadow: -2px 6px 10px 0 rgba(0, 0, 0, 0.46);
-    position: relative;
+    /*position: relative;*/
     margin-bottom: 10%;
+  }
+
+  .mpIconNew{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .mpIconNew:after{
+    content: '';
+    position: absolute;
+    width: 17%;
+    height: 35%;
+    top: 5px;
+    left: 5px;
+    background: url("../assets/img/new.svg")no-repeat;
   }
 
   .row .mp-gallery-item:last-child {
