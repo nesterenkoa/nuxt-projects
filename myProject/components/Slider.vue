@@ -1,5 +1,9 @@
 <template>
   <div class="mp-wrapper-slider">
+    <h3 class="heading">
+      Горячие предложения
+    </h3>
+    <span class="wrapper-divider" />
     <b-carousel
       id="carousel-animation"
       style="text-shadow: 0px 0px 2px #000"
@@ -49,5 +53,14 @@ export default {
 </script>
 
 <style scoped>
+  .wrapper-divider {
+    background: url('../assets/img/discount.svg');
+  }
 
+  .wrapper-divider:before{
+    bottom: 32%;
+  }
+  .wrapper-divider:after{
+    bottom: 32%;
+  }
 </style>

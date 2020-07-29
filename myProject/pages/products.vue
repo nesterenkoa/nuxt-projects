@@ -1,9 +1,5 @@
 <template>
   <div>
-    <h1 class="heading">
-      Продукты
-    </h1>
-    <span class="wrapper-divider" />
     <ListProducts />
   </div>
 </template>
@@ -28,7 +24,5 @@ export default {
 </script>
 
 <style scoped>
-/*.mp-search{*/
 
-/*}*/
 </style>

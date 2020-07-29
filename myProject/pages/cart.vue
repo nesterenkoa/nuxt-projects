@@ -2,9 +2,12 @@
   <div>
     <div v-if="favorites.length > 0">
       <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="mp-cart-title">
-          Ваша корзина
-        </h2>
+        <div>
+          <h2 class=" d-inline-block mp-cart-title">
+            Ваша корзина
+          </h2>
+          <img class="mp-img-cart d-md-inline-block" src="../assets/img/supermarket.svg">
+        </div>
         <p class="empty-trash" @click="removeAllProducts">
           <i class="fa fa-times" aria-hidden="true" />
           Oчистить все
@@ -45,6 +48,9 @@ export default {
   .empty-trash{
     color: red;
     font-size: 13px;
-
+  }
+  .mp-img-cart{
+    width: 40px;
+    display: none;
   }
 </style>

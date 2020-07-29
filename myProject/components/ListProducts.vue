@@ -1,6 +1,12 @@
 <template>
-  <div class="row">
-    <ItemProduct v-for="product of products" :key="product.id" :product="product" />
+  <div>
+    <h1 class="heading">
+      Продукты
+    </h1>
+    <span class="wrapper-divider" />
+    <div class="row">
+      <ItemProduct v-for="product of products" :key="product.id" :product="product" />
+    </div>
   </div>
 </template>
 
@@ -18,5 +24,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .wrapper-divider {
+    background: url('../assets/img/pizza.svg');
+    background-size: cover;
+  }
 </style>

@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+  .wrapper-divider{
+    background:url('../assets/img/bakery.svg');
+  }
   .mp-img-philosophy {
     width: 100%;
   }

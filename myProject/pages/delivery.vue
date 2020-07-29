@@ -112,19 +112,17 @@ export default {
     color: #862a5c;
     text-align: center;
   }
+
   .wrapper-divider{
     background:url('../assets/img/product.svg');
     background-size: cover;
-    display: block;
-    width: 55px;
-    height: 55px;
-    position: relative;
-    margin: 0 auto 25px;
   }
-.mp-list-delivery-services{
+
+  .mp-list-delivery-services{
   width: 80%;
   margin: 0 auto;
 }
+
   .mp-list-delivery-services li{
     position: relative;
     margin-bottom: 10px;

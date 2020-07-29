@@ -31,7 +31,14 @@
    color: #862a5c;
    text-align: center;
  }
-
+ .wrapper-divider{
+ background-size: cover;
+ display: block;
+ width: 55px;
+ height:55px;
+ position: relative;
+ margin: 0 auto 25px;
+ }
  .wrapper-divider:before{
    position: absolute;
    display: block;

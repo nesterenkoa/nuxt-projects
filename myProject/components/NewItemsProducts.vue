@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h3 class="mb-4 heading">
+    <h3 class="heading">
       Новинки
     </h3>
+    <span class="wrapper-divider" />
 
     <div class="row d-flex flex-column flex-md-row justify-content-md-between">
       <nuxt-link v-for="product of newItems" :key="product.id" class=" d-flex  justify-content-center align-items-center mb-4 col-sm-12 col-md-4  mp-link-styles" :to="{ name: 'product-details', params: { id: product.id } }">
@@ -50,6 +51,10 @@ export default {
 </script>
 
 <style scoped>
+  .wrapper-divider{
+    background:url('../assets/img/new-heading.svg');
+  }
+
   .mp-wrapper-img{
     width: 40vw;
     position: relative;
