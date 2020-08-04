@@ -8,8 +8,8 @@
         <div :class="{ mpIconNew: product.new }">
           <img :src="product.img" :alt="product.alt">
         </div>
-        <div class="mp-test">
-          <div class="d-flex justify-content-between align-items-center mp-margin-bt">
+        <div class="d-flex flex-column justify-content-between">
+          <div class="d-flex justify-content-between align-items-center">
             <h4 class="mp-title">
               {{ product.title }}
             </h4>
@@ -18,7 +18,7 @@
               {{ product.price }}
             </p>
           </div>
-          <p class="mp-description">
+          <p class="mp-description mb-2">
             <i class="fa fa-cutlery" aria-hidden="true" />
             {{ product.previewText }}
           </p>
@@ -58,12 +58,6 @@ export default {
 </script>
 
 <style scoped>
-  .mp-test{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
-
   .mp-link-styles{
     text-decoration: none;
   }
@@ -94,7 +88,20 @@ export default {
     left: 5px;
     background: url("../assets/img/new.svg")no-repeat;
   }
-
+  /*.mpIconNew:before{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 0.8em;*/
+    /*left: 1em;*/
+    /*width: 10%;*/
+    /*height: 15%;*/
+    /*background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.8), rgba(255,255,255,.0)) no-repeat -2em 0%;*/
+    /*background-size: 2em 100%;*/
+    /*z-index: 7;*/
+    /*transition: 2s linear;*/
+    /*background-position: 0 20%;*/
+    /*animation: timing;*/
+  /*}*/
   .row .mp-gallery-item:last-child {
     margin-right: 0;
   }
@@ -106,5 +113,4 @@ export default {
     object-fit: cover;
     margin-bottom: 10px;
   }
-
 </style>

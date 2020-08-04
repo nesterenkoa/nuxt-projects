@@ -1,13 +1,23 @@
 export const state = () => ({
   items: [],
-  product: {}
+  product: {},
+  filters: {},
+  filteredProducts: []
 })
 
 export const getters = {
   items: store => store.items,
   product: store => store.product,
   item: store => id => store.items.find(i => i.id === id),
-  newItems: store => store.items.filter(i => !!i.new)
+  newItems: store => store.items.filter(i => !!i.new),
+  filters: store => store.filters,
+  filteredProducts: store => filterProducts(store.items, store.filters),
+  categories: store => store.items.reduce((acc, item) => {
+    if (!acc.includes(item.category) && item.category) {
+      acc.push(item.category)
+    }
+    return acc
+  }, [])
 }
 
 export const actions = {
@@ -47,5 +57,23 @@ export const mutations = {
   },
   saveSingleProduct (state, product) {
     state.product = product
+  },
+  setFilter (state, payload) {
+    state.filters = {
+      ...state.filters,
+      ...payload
+    }
+  },
+  resetFilters (state) {
+    state.filters = {}
   }
+}
+
+const filterProducts = (products, filters) => {
+  let filteredItems = products
+
+  if (filters && filters.category) {
+    filteredItems = filteredItems.filter(i => i.category === filters.category)
+  }
+  return filteredItems
 }

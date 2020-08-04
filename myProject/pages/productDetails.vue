@@ -1,10 +1,12 @@
 <template>
   <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mp-background">
     <div class="mp-wrapper-img">
-      <img :src="product.img" :alt="product.alt">
+      <div :class="{ mpIconNew: product.new }">
+        <img :src="product.img" :alt="product.alt">
+      </div>
     </div>
 
-    <div class="mp-test d-flex flex-column">
+    <div class="mp-wrapper d-flex flex-column">
       <div class="d-flex justify-content-between align-items-center mp-margin-bt">
         <h4 class="mp-title">
           {{ product.title }}
@@ -14,7 +16,7 @@
           {{ product.price }}
         </p>
       </div>
-      <p class="mp-description">
+      <p class="mp-description mb-2">
         <i class="fa fa-cutlery" aria-hidden="true" />
         {{ product.description }}
       </p>
@@ -35,14 +37,6 @@ import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'ProductDetails',
-  // async asyncData({$axios, params, error}) {
-  //   try {
-  //     const product = await $axios.$get(`/products/${params.id}`)
-  //     return {product}
-  //   } catch (e) {
-  //     return error(e)
-  //   }
-  // },
   async fetch ({ store, params }) {
     await store.dispatch('products/loadSingle', params.id)
   },
@@ -64,17 +58,29 @@ export default {
 
  .mp-wrapper-img img{
   width: 100%;
-   /*border-radius: 10px;*/
 }
 
   .mp-wrapper-img{
     width: 100%;
   }
 
-  .mp-test{
+  .mpIconNew{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .mpIconNew:after{
+    content: '';
+    position: absolute;
+    width: 17%;
+    height: 35%;
+    top: 5px;
+    left: 5px;
+    background: url("../assets/img/new.svg")no-repeat;
+  }
+  .mp-wrapper{
     background-color: white;
     padding: 10px;
-    /*border-radius: 15px;*/
   }
   .mp-background{
     padding: 20px;
@@ -98,12 +104,10 @@ export default {
       width: 100%;
     }
 
-    .mp-test {
+    .mp-wrapper {
       width: 100%;
     }
-
     .mp-description{
-      /*font-size: 14px;*/
       font-size: 1rem;
     }
 
@@ -116,17 +120,9 @@ export default {
     width: 37%;
   }
 
-  .mp-test {
+  .mp-wrapper {
     width: 56%;
   }
 
 }
-  /*@media (min-width: 900px){*/
-    /*.mp-wrapper-img{*/
-      /*width: 35%;*/
-    /*}*/
-    /*.mp-test {*/
-      /*width: 50%;*/
-    /*}*/
-  /*}*/
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="mp-wrapper-slider">
     <h3 class="heading">
-      Горячие предложения
+      Hot deals
     </h3>
     <span class="wrapper-divider" />
     <b-carousel

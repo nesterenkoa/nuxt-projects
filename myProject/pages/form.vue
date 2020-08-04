@@ -66,7 +66,7 @@
           />
         </b-form-group>
 
-        <b-button type="submit" class="mp-btn mp-btn-checkout">
+        <b-button type="submit" class="mp-btn mp-btn-checkout mb-2 mb-md-0">
           Submit
         </b-button>
         <b-button type="reset" class="mp-btn mp-btn-remove">

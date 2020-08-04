@@ -1,9 +1,10 @@
 <template>
   <div>
     <h1 class="heading">
-      Продукты
+    Products
     </h1>
     <span class="wrapper-divider" />
+    <FilterProducts />
     <div class="row">
       <ItemProduct v-for="product of products" :key="product.id" :product="product" />
     </div>
@@ -13,12 +14,16 @@
 <script>
 import { mapGetters } from 'vuex'
 import ItemProduct from './ItemProduct'
+import FilterProducts from './FilterProducts'
 
 export default {
   name: 'ListProducts',
-  components: { ItemProduct },
+  components: {
+    ItemProduct,
+    FilterProducts
+  },
   computed: mapGetters({
-    products: 'products/items'
+    products: 'products/filteredProducts'
   })
 }
 </script>

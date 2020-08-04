@@ -15,22 +15,22 @@
         <b-collapse id="nav-collapse" is-nav>
           <ul class="navbar-nav mb-4 mb-lg-0">
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'home', params: { lang } }">
+              <nuxt-link class="nav-link mp-nav" exact active-class="active" :to="{ name: 'home', params: { lang } }">
                 {{ $t('nav.home') }}<span class="sr-only">(current)</span>
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'products', params: { lang } }">
+              <nuxt-link class="nav-link mp-nav" active-class="active" :to="{ name: 'products', params: { lang } }">
                 {{ $t('nav.products') }}
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'delivery', params: { lang } }">
+              <nuxt-link class="nav-link mp-nav active" :to="{ name: 'delivery', params: { lang } }">
                 {{ $t('nav.delivery') }}
               </nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link mp-nav" :to="{ name: 'about', params: { lang } }">
+              <nuxt-link class="nav-link mp-nav" active-class="active" :to="{ name: 'about', params: { lang } }">
                 {{ $t('nav.abous') }}
               </nuxt-link>
             </li>

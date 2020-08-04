@@ -9,7 +9,7 @@
         <h2 class="mb-3 mp-info-heading">
           Наша философия
         </h2>
-        <p class="styles-text">
+        <p class="mp-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum doloremque doloribus itaque, iusto pariatur ratione.
           Accusamus consequatur cumque dolorum inventore maiores nisi odio quo reprehenderit unde! Earum, quos, ratione.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aut, cum, dicta eaque eius esse eveniet nam nostrum perspiciatis
@@ -25,7 +25,7 @@
         <h2 class="mb-3 mp-info-heading">
           Lorem ipsum.
         </h2>
-        <p class="styles-text">
+        <p class="mp-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum doloremque doloribus itaque, iusto pariatur ratione.
           Accusamus consequatur cumque dolorum inventore maiores nisi odio quo reprehenderit unde! Earum, quos, ratione.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aut, cum, dicta eaque eius esse eveniet nam nostrum perspiciatis
@@ -39,7 +39,7 @@
         <h2 class="mb-3 mp-info-heading">
           Lorem ipsum dolor sit.
         </h2>
-        <p class="styles-text">
+        <p class="mp-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum doloremque doloribus itaque, iusto pariatur ratione.
           Accusamus consequatur cumque dolorum inventore maiores nisi odio quo reprehenderit unde! Earum, quos, ratione.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet aut, cum, dicta eaque eius esse eveniet nam nostrum perspiciatis
@@ -73,6 +73,15 @@ export default {
     border-radius: 20px;
     width: 60%;
     object-fit: cover;
+  }
+  .mp-description {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  @media (min-width:920px) {
+    .mp-description {
+      font-size: 1.1rem;
+    }
   }
   @media (min-width: 992px) {
     .mp-img-philosophy{

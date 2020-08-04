@@ -13,7 +13,7 @@
         </p>
       </div>
 
-      <p class="mp-description">
+      <p class="mp-description mb-2">
         <i class="fa fa-cutlery" aria-hidden="true" />
         {{ favorit.previewText }}
       </p>
@@ -51,13 +51,17 @@ export default {
     padding: 15px;
     text-decoration: none;
   }
-
   .mp-info{
     width: 70%;
   }
-
  .mp-favorit-img{
   height: 46vh;
    position: relative;
 }
+
+  @media (max-width: 400px) {
+    .mp-info{
+      width: 95%;
+    }
+  }
 </style>
