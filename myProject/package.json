@@ -11,7 +11,8 @@
     "generate": "nuxt generate",
     "api": "json-server --watch ./api/db.json --port 8080",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint-fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+    "lint-fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
