@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="heading">
-    Products
+      Products
     </h1>
     <span class="wrapper-divider" />
     <FilterProducts />

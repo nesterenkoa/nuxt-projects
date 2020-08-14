@@ -1,5 +1,5 @@
 <template>
-  <div class="mp-wrapper-slider">
+  <div class="mb-4">
     <h3 class="heading">
       Hot deals
     </h3>
@@ -10,14 +10,13 @@
       fade
       indicators
       img-width="1024"
-      img-height="480"
+      img-height="80"
     >
       <b-carousel-slide
         v-for="img of imagesSlider"
         :key="img.src"
         :caption="img.alt"
         :img-src="img.src"
-        class="mp-img-slider"
       />
     </b-carousel>
   </div>
@@ -53,6 +52,11 @@ export default {
 </script>
 
 <style scoped>
+  .mp-wrapper-slider{
+    width: 99%;
+    min-height: 300px;
+  }
+
   .wrapper-divider {
     background: url('../assets/img/discount.svg');
   }
@@ -63,4 +67,5 @@ export default {
   .wrapper-divider:after{
     bottom: 32%;
   }
+
 </style>

@@ -22,7 +22,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: 'red', height: '5px' },
+  loading: { color: '#1ad4b5', height: '4px' },
   /*
   ** Global CSS
   */
@@ -61,8 +61,9 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    host: 'localhost',
-    port: 8080
+    host: 'json-server-api-avocado.herokuapp.com',
+    port: 443,
+    https: true
   },
   /*
   ** Build configuration

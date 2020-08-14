@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
-    <Slider class="mb-5" />
-    <NewItemsProducts />
-    <CoffeeToGo />
+  <div>
+    <Slider />
+    <div class="container">
+      <NewItemsProducts />
+      <CoffeeToGo />
+    </div>
   </div>
 </template>
 

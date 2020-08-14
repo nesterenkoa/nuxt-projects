@@ -1,6 +1,6 @@
 <template>
-  <div class="mb-4">
-    <validation-observer v-slot="{ handleSubmit }" slim>
+  <div class="container mb-4">
+    <validation-observer v-if="!status" v-slot="{ handleSubmit }" slim>
       <b-form @submit.prevent="handleSubmit(order)" @reset="onReset">
         <!--<p>{{ status }}</p>-->
         <validation-provider v-slot="{ errors, classes }" :rules="{ required: true, min: 10 }" name="Address">
@@ -74,6 +74,18 @@
         </b-button>
       </b-form>
     </validation-observer>
+    <div v-else class="wrapper">
+        <p class="text mb-4">Thank You!</p>
+        <p class="text">Order is accepted!</p>
+      <video
+        class="img-orderDone"
+        autoplay
+        loop
+        src="../assets/img/thumbs-up.mp4"
+        type="video/mp4"
+        alt="good"
+      />
+    </div>
   </div>
 </template>
 
@@ -89,10 +101,7 @@ export default {
         checked: []
       },
       delivery: ['Самовывоз', 'Наш курьeр', 'Glovo'],
-      show: true,
-      errorShow: false,
-      status: 'Idle'
-
+      status: false
     }
   },
   computed: mapGetters({
@@ -110,7 +119,7 @@ export default {
       // }
 
       await this.$axios.$post('/delivery', { form: this.form, order: this.items })
-        .then(() => { this.status = 'Success' })
+        .then(() => { this.status = true })
         .catch((err) => { this.status = `Error: ${err.message}` })
 
       // reset ordered items
@@ -129,7 +138,7 @@ export default {
       this.form.delivery = null
       this.form.checked = []
       // Trick to reset/clear native browser form validation state
-      this.show = false
+      this.status = false
       this.$nextTick(() => {
         this.show = true
       })
@@ -139,8 +148,20 @@ export default {
 </script>
 
 <style scoped>
-  .btn-sumbit{
-    background: ;
+  .wrapper{
+    text-align: center;
+  }
+  .img-orderDone {
+   width: 75%;
+ }
+  .text{
+    /*text-align: center;*/
+    color: #ca3f8b;
+    font-size: 20px;
+  }
+  .text:nth-of-type(2){
+    color: #36becd;
+    font-size: 18px;
   }
   .has-error{
     border: 1px solid red;

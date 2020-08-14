@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1 class="heading">
       Немного о нас
     </h1>

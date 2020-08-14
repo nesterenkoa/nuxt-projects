@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <ListProducts />
   </div>
 </template>

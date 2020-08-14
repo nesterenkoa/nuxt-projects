@@ -2,10 +2,8 @@
   <div>
     <TheHeader />
     <div class="mb-3" />
-    <div class="container">
-      <Breadcrumb />
-      <nuxt />
-    </div>
+    <Breadcrumb />
+    <nuxt />
     <TheFooter />
   </div>
 </template>

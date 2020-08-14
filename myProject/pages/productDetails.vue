@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mp-background">
+  <div class="container d-flex flex-sm-row flex-column justify-content-between align-items-center mp-background">
     <div class="mp-wrapper-img">
       <div :class="{ mpIconNew: product.new }">
         <img :src="product.img" :alt="product.alt">

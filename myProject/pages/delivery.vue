@@ -1,5 +1,5 @@
-<template>
-  <div class="mb-4">
+<template class="container">
+  <div class=" container mb-4">
     <h1 class="heading">
       Delivery
     </h1>

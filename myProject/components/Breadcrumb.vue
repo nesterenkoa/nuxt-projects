@@ -1,7 +1,9 @@
 <template>
-  <b-breadcrumb :items="breadcrumbList" class="mp-breadcrumb">
-    {{ breadcrumbList }}
-  </b-breadcrumb>
+  <div class="container">
+    <b-breadcrumb :items="breadcrumbList" class=" mp-breadcrumb">
+      {{ breadcrumbList }}
+    </b-breadcrumb>
+  </div>
 </template>
 
 <script>
@@ -40,5 +42,6 @@ export default {
 
   .mp-breadcrumb{
     background-color: transparent;
+    padding: 2px;
   }
 </style>
