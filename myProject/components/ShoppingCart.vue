@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <nuxt-link :to="{ name: 'cart', params: { lang} }" class="mp-shopping-cart mr-lg-1">
+    <nuxt-link :to="{ name: 'cart', params: { lang} }" class="mp-shopping-cart mr-lg-4">
       <i class="fa fa-shopping-cart" aria-hidden="true" />
       <span class="mp-cart-quantity"> {{ favorites.length }}</span>
       <span v-if="orderCost > 0" class="order-price"> = {{ orderCost }} <i class="fa fa-credit-card" aria-hidden="true" /> </span>
     </nuxt-link>
-  </div>
 </template>
 
 <script>
@@ -51,8 +49,8 @@ export default {
     text-align: center;
     font-size: 18px;
     position: absolute;
-    top: -19px;
-    left: 22px
+    top: -12px;
+    left: 24px
   }
 
   .order-price{

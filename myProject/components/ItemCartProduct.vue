@@ -19,7 +19,7 @@
       </p>
       <button class="mp-btn mp-btn-remove al" @click.prevent="onRemoveFromFavorites(favorit)">
         <i class="fa fa-shopping-cart" aria-hidden="true" />
-        Remove from favorites
+        Remove from cart
       </button>
     </div>
   </nuxt-link>

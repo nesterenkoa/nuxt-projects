@@ -25,11 +25,11 @@
 
           <button v-if="isCanAdd(product.id)" class="mp-btn mp-btn-order" @click.prevent="onAddToFavorites(product)">
             <i class="fa fa-cart-plus" aria-hidden="true" />
-            Add to favorites
+            Add to cart
           </button>
           <button v-else class="mp-btn mp-btn-remove" @click.prevent="onRemoveFromFavorites(product)">
             <i class="fa fa-shopping-cart" aria-hidden="true" />
-            Remove from favorites
+            Remove from cart
           </button>
         </div>
       </div>
